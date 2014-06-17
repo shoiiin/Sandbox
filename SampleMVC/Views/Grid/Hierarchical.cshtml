@@ -1,0 +1,14 @@
+﻿@using Sandbox.Helpers
+
+@{
+    ViewBag.Title = "HierarchicalGrid";
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+
+}
+
+<h2>HierarchicalGrid</h2>
+<input type="button" onclick="GetHGridData('@Url.Content("~/Grid/GetHData")')" value="Render grid"/> 
+<br />
+<div id="HGridContainer">
+    @Html.RenderControl(String.Format("ABC"))
+</div>

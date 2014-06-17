@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "Main page";
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+}
+
+<h2>Main page</h2>
+<hr />
+    Basics operations
+<ul>
+    <li class="link" onclick="LoadPage('@(Url.Action("Index","Basics"))')">Index (AJAX calls, error handling, cache, etc)</li>
+    <li class="link" onclick="LoadPage('@(Url.Action("Index", "PostBoard"))')">Post board</li>
+</ul>
+
+<hr />
+Grid sandbox
+<ul>
+    <li class="link" onclick="LoadPage('@(Url.Action("Hierarchical","Grid"))')">Hierarchical grid</li>
+</ul>
+
+<hr />
+iPad
+<ul>
+    <li class="link" onclick="LoadPage('@(Url.Action("EmbeddedPDF","iPad"))')">Embedded PDF</li>
+</ul>
+
+<hr />
+HTML/CSS
+<ul>
+    <li class="link" onclick="LoadPage('@(Url.Action("Index","HTMLCSS"))')">HTML/CSS</li>
+</ul>

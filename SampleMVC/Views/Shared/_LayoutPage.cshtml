@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" href="@Url.Content("~/Content/reset.css")" type="text/css" />
+    <link rel="stylesheet" href="@Url.Content("~/Content/site.css")" type="text/css" />
+    <link type="text/css" href="@Url.Content("~/Content/Themes/redmond/jquery-ui-1.8.21.custom.css")" rel="Stylesheet" />	
+    <link rel="stylesheet" href="@Url.Content("~/Content/menu.css")" type="text/css" />
+    <link rel="stylesheet" href="@Url.Content("~/Content/postBoard.css")" type="text/css" />
+
+    <script type="text/javascript" src="@Url.Content("~/Scripts/jquery-1.5.1.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/jquery-ui-1.8.21.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/ApplicationEnvironment.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/AJAXAdapter.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/Dialog.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/site.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/HGrid.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/Pages/ViewsHandling.js")"></script>
+    </head>
+<body>
+    <div class="header">
+        <h1><a href="@Url.Content("~")">Sandbox</a></h1>
+    </div>
+    <div class="contents">
+        @RenderBody()
+    </div>
+    <div class="footer">
+        <div>
+            sandbox solution
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    var ClientEnvironment;
+    $(document).ready(function () {
+        try {
+            ClientEnvironment = new ApplicationEnvironment();
+        } catch (e) {
+            // make sure the user is warned if site is not initialized properly
+            // if application crashes here there must be somethig wrong with jQuery or other jQuery-based components
+            alert(e.Message);
+        }
+    });
+    $(window).resize(function (eventObj) {
+        $('.contents').css('max-height',($(window).height() - $('.footer').outerHeight() - $('.header').outerHeight()) + 'px');
+        $('.contents').height($(window).height() - $('.footer').outerHeight() - $('.header').outerHeight());
+    });
+</script>
+</html>

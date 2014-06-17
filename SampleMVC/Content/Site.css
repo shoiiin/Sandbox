@@ -1,0 +1,181 @@
+body
+{
+    font-size: 1.2em;
+    font-family: "Arial", Verdana, Helvetica, Sans-Serif;
+    color: #000000;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    scrollbar-base-color: #666;
+    scrollbar-3dlight-color: #666;
+    scrollbar-highlight-color: #666;
+    scrollbar-track-color: #f9f9fa;
+    scrollbar-arrow: none;
+    scrollbar-shadow-color:#666;
+    scrollbar-dark-shadow-color: #666;
+}
+
+header,
+footer,
+nav,
+section {
+    display: block;
+}
+
+.header {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px 0 20px;
+}
+.footer {
+    text-align: center;
+    position: absolute;
+    bottom: 1px;
+    background-color: lightcoral;
+    width: 100%;
+    height: 20px;
+}
+
+
+.contents {
+    position: absolute;
+    top: 40px;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    background-color: #f2f3f4;   
+}
+
+::-webkit-scrollbar {
+    width:10px;
+    height: 10px;
+}
+::-webkit-scrollbar-button {
+    display: none;
+    width: 0;
+    height: 0;
+}
+::-webkit-scrollbar-track {
+    background-color: #f9f9fa;
+    box-shadow: inset 0 0 1px 0 rgba(0,0,0,0.2);
+}
+::-webkit-scrollbar-thumb {
+    background-color: #666; 
+    border-radius: 3px;
+}
+
+/* Styles for basic forms
+-----------------------------------------------------------*/
+
+h2 {
+    border-radius: 5px;
+    border: 1px solid #d6dbdd;
+    padding: 5px;
+    font-size: 1.4em;
+    height: 36px;  
+}
+fieldset 
+{
+    border:1px solid #ddd;
+    padding:0 1.4em 1.4em 1.4em;
+    margin:0 0 1.5em 0;
+}
+
+legend 
+{
+    font-size:1.2em;
+    font-weight: bold;
+}
+
+textarea 
+{
+    min-height: 75px;
+}
+
+.editor-label 
+{
+    margin: 1em 0 0 0;
+}
+
+.editor-field 
+{
+    margin:0.5em 0 0 0;
+}
+
+.link
+{
+    text-decoration:underline;
+    color:Blue;
+}
+
+.link:hover
+{
+    cursor:pointer;
+}
+
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error
+{
+    color: #ff0000;
+}
+
+.field-validation-valid
+{
+    display: none;
+}
+
+.input-validation-error
+{
+    border: 1px solid #ff0000;
+    background-color: #ffeeee;
+}
+
+.validation-summary-errors
+{
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.validation-summary-valid
+{
+    display: none;
+}
+
+#errorDetailsContainer
+{
+    width:800px;
+}
+
+.iframeContainer {
+    -webkit-overflow: touch;
+    position: relative;
+    overflow: scroll;
+    border: 1px solid red;
+    width:400px
+}
+
+iframe {
+    -webkit-overflow: touch;
+    -ms-transform: scale(1.00);
+    -moz-transform: scale(1.00);
+    -o-transform: scale(1.00);
+    -webkit-transform: scale(1.00);
+    transform: scale(1.00);
+
+    -ms-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;    
+}
+
+.hidden {
+    display: none;
+}
+
+.view{
+    min-height: 300px;
+    background-color: silver;
+}

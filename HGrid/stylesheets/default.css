@@ -1,0 +1,544 @@
+html {
+    
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: white;
+}
+
+div {
+    //border: 1px solid black;
+}
+
+body, input, button {
+}
+
+button {
+    min-width: 40px;
+    padding-left: 5px;
+}
+
+h1 {
+    font-size: 18px;
+}
+
+.link {
+    //font-size: 14px;
+    color: #080808;
+    //color: rgb(91,127,161);
+    text-decoration: underline;
+}
+
+.vinculum {
+    display: block;
+    clear: both;
+}
+
+.aslink {
+    padding-left: 10px;
+}
+
+.footer a.link {
+    font-size: 11px;
+}
+
+.tabbuttonlabel {
+    font-size: 10px;
+}
+
+a.link.bluer {
+    color: #1B3F71;
+}
+
+.link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+a img {
+    border: none;
+}
+
+.advancedsearchinputwrapper {
+    position: relative;
+    width: 98%;
+}
+
+.quicksearchinputwrapper {
+    position: relative;
+    width: 98%;
+}
+
+.controlinputwrapper {
+    position: relative;
+    width: 98%;
+}
+
+.searchheading {
+    position: realtive;
+    text-align: bottom;
+    display: inline;
+}
+
+.searchalternatelink {
+    position: realtive;
+    text-align: bottom;
+    display: inline;
+    float: right;
+    padding-top: 20px;
+    //margin-top: 20px;
+}
+
+.searchbuttoncontainer {
+    position: relative;
+    //padding: 5px;
+}
+
+.searchicon {
+    width: 32px;
+    height: 32px;
+}
+
+.searchbuttoncontainer img {
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+.searchbuttoncontainer img:hover {
+    border-top: 0px none;
+    border-left: 0px none;
+    border-right: 2px solid grey;
+    border-bottom: 2px solid grey;
+}
+
+.searchbuttoncontainer div.selected img:hover {
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+.advancedsearchfields {
+    position: absolute;
+    overflow: auto;
+    z-index: 5000;
+}
+
+.advancedsearchfields .asflabel {
+    font-size: 14px;
+}
+
+.advancedsearchfields .advancedsearchfieldstitle {
+    padding: 0.5em;
+    border-bottom: 1px solid Grey;
+}
+
+.advancedsearchfields .advancedsearchfieldstable {
+    padding-left: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    width: 100%;
+}
+
+.advancedsearchstage {
+    overflow: auto;
+    height: 80%;
+    width: 98%;
+    padding: 5px;
+}
+
+.controlfields {
+    position: absolute;
+    //overflow: auto;
+    z-index: 5000;
+    height: 350px;
+    width: 100%;
+}
+
+.controlfields .asflabel {
+    font-size: 14px;
+}
+
+.controlfields .controlfieldstitle {
+    padding: 0.5em;
+    border-bottom: 1px solid Grey;
+}
+
+.controlfields .controlfieldstable {
+    padding-left: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    width: 100%;
+}
+
+.searchfieldsbuffer {
+    padding-left: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 100%;
+}
+
+.searchfieldsbuffer .spread {
+    padding-left: 5px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.searchfieldsbuffer .searchradios {
+    display: inline;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+.quicksearchlabel {
+    font-size: 14px;
+}
+
+.controllabel {
+    font-size: 14px;
+}
+
+.searchbuttoncontainer .asf_a {
+    padding: 5px;
+    position: relative;
+}
+
+.searchbuttoncontainer .control_a {
+    padding: 5px;
+    position: relative;
+}
+
+.selected {
+    //background-color: Ivory;
+    background-image: url(stylesheets/images/searchform_bg.png);
+    background-repeat: repeat-x;
+    border-bottom: 1px solid Grey;
+    border-right: 1px solid Grey;
+    border-top: 0px none;
+    border-left: 0px none;
+}
+
+div.tabbutton {
+    padding: 5px;
+    position: relative;
+    text-align: center;
+    float: left;
+    margin: 1px;
+}
+
+div.tabbutton.selected {
+    //background-color: Ivory;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid grey;
+    border-bottom: 1px solid grey;
+    margin: 0px;
+}
+
+.tabbutton .selected {
+    //background-color: Ivory;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+.header { 
+    width: 100%;
+    background-color: white;
+    height: 28px;
+    position: relative;
+    z-index: 5000;
+}
+
+
+.header .header_line_wrapper {
+    color: grey;
+    width: 20%;
+    height: 5px;
+    background-color: white;
+    padding-top: 5px;
+}
+
+.header .header_line_wrapper.left {
+    float: left;
+    margin-left: 25px;
+}
+
+.header .header_line_wrapper.right {
+    float: right;
+    margin-right: 25px;
+    text-align: right;
+}
+
+.header .header_line {
+    width: 100%;
+    height: 5px;
+    background-color: grey;
+}
+
+.content {
+        border-bottom: 2px solid grey;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-left: 20px;
+    width: 100%;
+    min-height: 600px;
+}
+
+.content .inner_content {
+    position: relative;
+    width: 100%;
+}
+
+.footer {
+    width: 98%;
+    margin-top: 2px;
+    color: grey;
+    font-size: 9px;
+    height: 60px;
+    clear: both;
+    position: relative;
+}
+
+.footer .footer_column {
+    height: 100%;
+}
+
+.footer .footer_column.left {
+    float: left;
+    margin-left: 20px;
+}
+
+.footer .footer_column.right {
+    float: right;
+    margin-right: 20px;
+    width: 162px;
+    text-align: right;
+}
+
+.footer .footer_column a {
+    text-decoration: none;
+    color: grey;
+}
+
+.footer .footer_column a:hover {
+    text-decoration: underline;
+}
+
+input[type=text], input[type=password] {
+    color: black;
+    font-size: 12px;
+    padding-left: 0.3em;
+    //width: 95%; 
+    border-top: 1px solid grey;
+    border-left: 1px solid grey;
+    border-bottom: 1px solid lightgrey;
+    border-right: 1px solid lightgrey;
+    background-color: White;
+    height: 1.8em;
+}
+
+input[type=text].inputallfields {
+    width: 98%;
+}
+
+#quicksearchterm {
+    //width: 500px;
+}
+
+input[type=text].small, input[type=password].small {
+    padding: 1px;
+    width: 200px;
+    font-size: 10px;
+}
+
+input[type=text].disabled {
+    color: rgb(200,200,200);
+}
+
+input[type=submit] {
+    background-color: white; 
+    color: black; 
+    font-size: 12px; 
+    padding: 0.1em; 
+    border: 2px solid rgb(91,127,161); 
+    cursor: pointer;
+}
+input[type=submit].small_btn {
+    height: 34px;
+    font-size: 10px;
+    width: 115px;
+    padding: 0px;
+}
+
+input[type=submit]:hover, button:hover {
+    cursor: pointer;
+}
+
+
+
+.text {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+
+.text a {
+    font-size: 20px;
+}
+
+/*
+label {
+    font-weight: bold;
+    width: 100px;
+    font-size: 18px;
+    height: 1.8em;
+    margin: 10px;
+    padding-top: 0.3em;
+}
+*/
+
+#twopanels {
+    position: relative;
+    width: 97%;
+    display: block;
+}
+#leftpanel_searchfields {
+    position: relative;
+    width: 66%;
+    float: left;
+}
+#rightpanel_control {
+    position: relative;
+    width: 33%;
+    //min-height: 400px;
+    float: right;
+    //border: 1px solid lightgrey;
+}
+
+#results {
+    display: block;
+    position: relative;
+    width: 98%;
+    min-height: 300px;
+    clear: both;
+}
+#messages {
+    display: block;
+    position: relative;
+    width: 98%;
+    height: 400px;
+    clear: both;
+    overflow: auto;
+}
+#messages div {
+    border: 1px solid grey;
+    color: Red;
+}
+
+.spread {
+    position: relative;
+    width: 100%;
+}
+
+table.scrollTable .resultstable1 {
+    background-color: #F8F8F8;
+}
+table.scrollTable th {
+    text-align: left;
+}
+
+/* Summary */
+
+/*
+.               (summaryroot)
+Customer        (summarytitle)
+    .           (summarychildren)
+    Surname     (summaryfieldcaption)
+        Hazel   (summarychild)
+*/
+.summary {
+    font-size: 14px;
+}
+.summaryroot {
+    display: block;
+    position: relative;
+    margin-left: 10px;
+}
+.summarytitle {
+    display: block;
+    position: relative;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.summarychildren {
+    display: block;
+    position: relative;
+    margin-left: 20px;
+}
+.summaryfieldcaption {
+    display: inline;
+    margin-left: 20px;
+    font-size: 0.95em;
+    font-weight: bold;
+}
+.summarychild {
+    display: inline;
+    margin-left: 10px;
+    font-size: 0.95em;
+}
+
+/* Visual styles for t1ecmscrolltable */
+.scrollTable {
+    border-collapse:collapse;
+    font-family: Tahoma;
+    text-decoration: none;
+}
+
+.scrollTable tbody tr {
+    height: auto;
+    //white-space: nowrap;
+}
+
+.scrollTable thead {
+    //background-color: #3A6BB8;
+    background-image: url(stylesheets/images/searchform_bg.png);
+}
+.scrollTable thead tr {
+    //background-color: #3A6BB8;
+    background-image: url(stylesheets/images/searchform_bg.png);
+    //color: #ffffff;
+    color: #303030;
+    font-family: Tahoma;
+    //font-size: 0.71em;
+    font-weight: bold;
+    height: auto;
+    //padding: 2px;
+    text-align: left;
+    white-space: nowrap;
+    /*padding: 0px 10px 0px 10px;*/
+}
+.scrollTable thead tr th {
+    //background-color: #3A6BB8;
+    background-image: url(stylesheets/images/searchform_bg.png);
+    min-width: 65px;
+    white-space: nowrap;
+}
+
+.searchbuttoncontainer img {
+}
+
+.treeanchor {
+    border-top: 1px solid white;
+    border-left: 1px solid lightgrey;
+    border-right: 1px solid grey;
+    border-bottom: 1px solid grey;
+}

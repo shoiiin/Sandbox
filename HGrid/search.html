@@ -1,0 +1,4285 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>TechnologyOne C2 screen mockup for ECM Search</title>
+    <!-- DJH BEGIN C2 styles and js -->
+<link href="T1.C2.Web.Startup/Content/Styles/Reset.css" rel="stylesheet" type="text/css" />
+<link href="T1.C2.Web.Startup/Content/Styles/c2.css" rel="stylesheet" type="text/css" />
+<link href="T1.C2.Web.Startup/Content/Styles/Base.css" rel="stylesheet" type="text/css" />
+<link href="T1.C2.Web.Startup/Content/Styles/Header.css" rel="stylesheet" type="text/css" />
+<link href="T1.C2.Web.Startup/Content/Controls/All/Styles.css" rel="stylesheet" type="text/css" />
+<link href="T1.C2.Web.Startup/Content/Styles/Icons.css" rel="stylesheet" type="text/css" />
+<link href="T1.C2.Web.Startup/Content/Styles/Alerts.css" rel="stylesheet" type="text/css" />
+<link href="T1.C2.Web.Startup/Content/Styles/Start.css" rel="stylesheet" type="text/css" />
+
+<link href="T1.C2.Web.Startup/Content/Controls/Link/Link.css" rel="stylesheet" type="text/css" />
+<link href="T1.C2.Web.Startup/Content/Controls/Button/Button.css" rel="stylesheet" type="text/css" />
+<link href="T1.C2.Web.Startup/Content/Controls/Button/Actions.css" rel="stylesheet" type="text/css" />
+<link href="T1.C2.Web.Startup/Content/Controls/RadioButton/RadioButton.css" rel="stylesheet" type="text/css" />
+<link href="T1.C2.Web.Startup/Content/Controls/Checkbox/Checkbox.css" rel="stylesheet" type="text/css" />
+<link href="T1.C2.Web.Startup/Content/Styles/Grid.css" rel="stylesheet" type="text/css" />
+<link href="T1.C2.Web.Startup/Content/Controls/Notification/Notification.css" rel="stylesheet" type="text/css" />
+<link href="T1.C2.Web.Startup/Content/Styles/Grid.css" rel="stylesheet" type="text/css" />
+
+<link href="#" rel="icon" type="image/x-icon" />
+<link href="#" rel="shortcut icon" type="image/x-icon" />
+    <!--
+<script src="script/jquery-1.6.1.min.js" type="text/javascript"></script>
+    -->
+    <!-- DJH drop back to jquery-1.5.1, to use jquery-ui, to use datepicker -->
+    <!--
+<link href="script/jquery-ui-1.8.13/themes/base/minified/jquery.ui.all.min.css" rel="stylesheet" type="text/css" >
+    -->
+<script src="T1.C2.Web.Startup/Content/Scripts/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="T1.C2.Web.Startup/Content/Scripts/jqueryJsonDates.js" type="text/javascript"></script>        
+<script src="T1.C2.Web.Startup/Content/Scripts/jquery-ui-1.8.16.custom.min.js" type="text/javascript"></script>
+
+
+<script src="T1.C2.Web.Startup/Content/Scripts/json2.js" type="text/javascript"></script>
+<script src="T1.C2.Web.Startup/Content/Scripts/date.format.js" type="text/javascript"></script>
+
+
+<script src="T1.C2.Web.Startup/Content/Scripts/Shell.js" type="text/javascript"></script>
+<script src="T1.C2.Web.Startup/Content/Scripts/Ajax.js" type="text/javascript"></script>
+<script src="T1.C2.Web.Startup/Content/Scripts/modernizr2.js" type="text/javascript"></script>
+<script src="T1.C2.Web.Startup/Content/Scripts/FirefoxOffsetFix.js" type="text/javascript"></script>
+<script src="T1.C2.Web.Startup/Content/Scripts/Utilities.js" type="text/javascript"></script>    
+
+
+<script src="T1.C2.Web.Startup/Content/Scripts/Footer.js" type="text/javascript"></script>       
+
+
+<script src="T1.C2.Web.Startup/Content/Scripts/ControlInitialiser.js" type="text/javascript"></script>   
+
+
+<script src="T1.C2.Web.Startup/Content/Scripts/iOS.js" type="text/javascript"></script>
+<script src="T1.C2.Web.Startup/Content/Controls/Console/T1Console.js" type="text/javascript"></script>
+<script src="T1.C2.Web.Startup/Content/Controls/Form/Form.js" type="text/javascript"></script>
+<script src="T1.C2.Web.Startup/Content/Controls/TextBox/Textbox.js" type="text/javascript"></script>
+<script src="T1.C2.Web.Startup/Content/Controls/AutoSuggest/AutoSuggest.js" type="text/javascript"></script>
+<script src="T1.C2.Web.Startup/Content/Scripts/DateOperations.js" type="text/javascript"></script>
+<script src="T1.C2.Web.Startup/Content/Controls/ActionPane/ActionPane.js" type="text/javascript"></script>
+<script src="T1.C2.Web.Startup/Content/Controls/PickList/Picklist.js" type="text/javascript"></script>
+<script src="T1.C2.Web.Startup/Content/Controls/Notification/Notification.js" type="text/javascript"></script>
+<script src="T1.C2.Web.Startup/Content/Controls/Datepicker/DatePicker.js" type="text/javascript"></script>
+<script src="T1.C2.Web.Startup/Content/Controls/CollapsibleSection/CollapsibleSection.js" type="text/javascript"></script>
+<script src="T1.C2.Web.Startup/Content/Controls/Tabbed/Tab.js" type="text/javascript"></script>
+<script src="T1.C2.Web.Startup/Content/Controls/DropDown/DropDown.js" type="text/javascript"></script>
+<script src="T1.C2.Web.Startup/Content/Controls/Panel/Panel.js" type="text/javascript"></script>
+<script src="T1.C2.Web.Startup/Content/Controls/Calculator/Calculator.js" type="text/javascript"></script>
+<script src="T1.C2.Web.Startup/Content/Controls/Overlay/overlay.js" type="text/javascript"></script>
+
+
+
+
+<script src="T1.C2.Web.Startup/Content/Controls/Table/Table.js" type="text/javascript"></script> 
+
+
+
+
+<script src="T1.C2.Web.Startup/Content/Controls/Popup/PopupControl.js" type="text/javascript"></script>
+
+<script src="T1.C2.Web.Startup/Content/Controls/DateRange/DateRange.js" type="text/javascript"></script>
+
+
+<script src="T1.Em.Web.Startup/Content/Scripts/jquery.ba-bbq.js" type="text/javascript"></script>
+
+
+<link href="T1.Em.Web.Startup/Content/Styles/ECMSearch.css" media="screen" rel="stylesheet" type="text/css" />
+<script src="T1.Em.Web.Startup/Content/Scripts/ECMPlugins.js" type="text/javascript"></script>
+<script src="T1.Em.Web.Startup/Content/Scripts/ECMStateTransitions.js" type="text/javascript"></script>
+
+  <script type="text/javascript">
+    //<![CDATA[
+    //
+    var constants = {};
+    constants.DEBUG = 0;
+    constants.ERROR = 1;
+    constants.NONE = 2;
+    constants.DATEFORMAT = "dd M yy";
+    constants.searchtypes = {
+        advanced: "advanced",
+        quick: "quick"
+    };
+    var eCMSearchState = {
+        counter: 0,
+        getCounter: function()
+        {
+            return ++(eCMSearchState.counter);
+        },
+        reporting: constants.ERROR,
+        viewmap: {},
+        currentSF: "",
+        currentASFID: "asf_document_a",
+        currentSFViewKey: "document",
+        views: {},
+        advancedPOSTData: {},
+        advancedChangeData: {},
+        quickSearchData: {},
+        xmlDefinitions: {},
+        controlmap: {
+            "control_searchnotes_a": {
+                "tabId": "searchnotes_controlwrapper"
+            },
+            "control_favorites_a": {
+                "tabId": "favorites_controlwrapper"
+            }
+        },
+        mockupAuthentication: {
+            "__ac_name": "admin",
+            "__ac_password": "admin",
+            "__cookie_auth": "1"
+        },
+        hidemachine: new T1ECM.hidemachine(
+            {
+                quicksearch: {
+                    hideclasses: {
+                        on: "advancedsearchonly",
+                        off: "quicksearchonly"
+                    },
+                    value: 1
+                },
+                results: {
+                    hideclasses: {
+                        on: "hideforresults",
+                        off: "hidefornoresults"
+                    },
+                    value: 0
+                }
+            }
+        ),
+        advancedSearchResultsSizeKeys: {}
+    };
+    //
+    // This function takes an id string and returns a valid selector #id
+    function id(s)
+    {
+        return "#" + escapeSpecialChars(s);
+    }
+    // This function takes a class string and returns a valid selector .class
+    function cl(s)
+    {
+        return "." + escapeSpecialChars(s);
+    }
+    function despace(s)
+    {
+        return s.replace(/ /g, "__");
+    }
+    function escapeSpecialChars(s)
+    {
+        var retid = 
+            s
+            .replace(/\\/g, "\\\\") //\" protect emacs font-lock
+            .replace(/\,/g, "\\,")
+            .replace(/\#/g, "\\#")
+            .replace(/\;/g, "\\;")
+            .replace(/\;/g, "\\;")
+            .replace(/\&/g, "\\&")
+            .replace(/\./g, "\\.")
+            .replace(/\+/g, "\\+")
+            .replace(/\*/g, "\\*")
+            .replace(/\~/g, "\\~")
+            .replace(/\'/g, "\\'")
+            .replace(/\:/g, "\\:")
+            .replace(/\"/g, "\\\"")
+            .replace(/\!/g, "\\!")
+            .replace(/\^/g, "\\^")
+            .replace(/\$/g, "\\$")
+            .replace(/\[/g, "\\[")
+            .replace(/\]/g, "\\]")
+            .replace(/\(/g, "\\(")
+            .replace(/\)/g, "\\)")
+            .replace(/\=/g, "\\=")
+            .replace(/\>/g, "\\>")
+            .replace(/\|/g, "\\|")
+            .replace(/\//g, "\\/")
+            .replace(/ /g, "\\ ")
+        ;
+        return retid;
+    }
+    function firstProperty(ob)
+    {
+        for (p in ob)
+        {
+            return p;
+        }
+        // return undefined
+    }
+    //
+    // This function takes a string containing:
+    // ... <body> ... </body> ...
+    // and constructs a new div whose contents are the contents of the body.
+    // An attempt is made to remove <script/> elements.
+    // A jQuery object for the div is returned.
+    function stringToBodyDiv(s)
+    {
+        var bodybegin = s.indexOf(">", s.indexOf("<body ")) + 1;
+        var bodyend = s.indexOf("</body>");
+        var bodycontents = 
+            s
+            .slice(bodybegin, bodyend)
+            .replace(/<script [^<]*<\/script>/g, "");
+        var stage = $(document.createElement("div"));
+        stage.html(bodycontents);
+        return stage;
+    }
+    function reportingAtLevel(level)
+    {
+        return eCMSearchState.reporting <= level;
+    }
+    function reportMessage(level, s)
+    {
+        if (eCMSearchState.reporting <= level)
+        {
+            var div = 
+                $(document.createElement("div"))
+                .appendTo($("#messages"))
+                .text(s);
+            if (s.indexOf("</body>") > -1)
+            {
+                try
+                {
+                    var markedUpDiv = 
+                        stringToBodyDiv(s)
+                        .css("display", "block")
+                        .appendTo(div);
+                }
+                catch (err)
+                {
+                    reportMessage(constants.ERROR, "(Failed to mark up last message.)");
+                }
+            }
+        }
+    }
+    $(document).ready(function() {
+        function login(auth, callback) {
+            $.get("/dwroot/datawrks/logon.htm",
+                  function(ignoreGETResponseText) {
+                      var authString = $.param(auth);
+                      $.post("/dwroot/datawrks/logon.htm",
+                             authString,
+                             callback);
+                  }
+                 );
+        }
+        // 
+        // setsearch uses the eCMSearchState.views (the result of setviews), 
+        // ... so we can't make both ajax requests at once: we have to chain them
+        function getSearchData() 
+        {
+            $.get("/dwroot/datawrks/search", 
+                  function(responseText)
+                  {
+                      setviews(responseText);
+                      $.get("/dwroot/datawrks/powersearch2",
+                            function (psresponseText)
+                            {
+                                setsearch(psresponseText);
+                            }
+                           );
+                  }
+                 );
+        }
+        function getXmlDefinition(viewcode)
+        {
+            //eCMSearchState.xmlDefinitions.viewcode =
+            var requestURL;
+            if (viewcode == "document")
+            {
+                requestURL = "/dwroot/datawrks/docs/xml_definition";
+            }
+            else
+            {
+                requestURL = "/dwroot/datawrks/views/" + viewcode + "/xml_definition";
+            }
+            $.get(requestURL, 
+                  function(responseXML)
+                  {
+                      /*
+                        Parse into the following structure:
+                        eCMSearchState.xmlDefinitions["activity"] = {
+                            _xml: ...,
+                            depth: 2,
+                            levels: [
+                                {
+                                    _xml: ...,
+                                    fields: {        // keyed on shortname
+                                        activityname: {
+                                            _xml: ...,
+                                            caption: "Activity Name",
+                                            shortname: "activityname",
+			                    tablename: "i98l2",
+			                    fieldname: "f1_activity_name",
+			                    fieldtype: "string",
+			                    fieldlength: "100",
+			                    realkeyno: "1",
+			                    mandatory: "true",
+			                    default: "",
+			                    displayorder: "1",
+			                    displayformat: "L",
+			                    displaylimit: "30",
+			                    spellcheck: "False",
+			                    phonetic: "False",
+			                    sqlid: "108",
+			                    system: "0",
+			                    positionable: "0",
+			                    sortorder: 0
+                                        }
+                                    },
+                                    displayfields: [...] // ordered by displayorder
+                                },
+                                {
+                                    _xml: ...,
+                                    fields: {...},       
+                                    displayfields: [...] 
+                                }
+                            ];
+                        };
+                        
+                       */
+                      var body = $(responseXML).children().first();
+                      var defnkey = body.children("name").text();
+                      var thisDefinition = eCMSearchState.xmlDefinitions[defnkey] = new Object();
+                      var definition = thisDefinition._xml = $(responseXML);
+                      //
+                      var levelDefinitions = definition.find("level");
+                      thisDefinition.depth = levelDefinitions.length;
+                      //
+                      var levels = thisDefinition.levels = new Array();
+                      levelDefinitions.each(function () {
+                          var levelnumber = parseInt($(this).children("levelnumber").text());
+                          var thisLevel = thisDefinition.levels[levelnumber] = new Object();
+                          thisLevel._xml = $(this);
+                          thisLevel.fields = new Object();
+                          thisLevel.displayFields = new Array();
+                          thisLevel._xml.find("field").each(function () {
+                              var thisField = new Object();
+                              thisField._xml = $(this);
+                              $(this).children().each(function () {
+                                  var attName = $(this)[0].localName;
+                                  var text = $(this).text();
+                                  thisField[attName] = text;
+                                  if (attName == "shortname")
+                                  {
+                                      thisLevel.fields[text] = thisField;
+                                      if (text.indexOf("id") == 0)
+                                      {
+                                          thisLevel.idfield = text;
+                                      }
+                                  }
+                                  else if (attName == "displayorder")
+                                  {
+                                      var doI = parseInt(text);
+                                      if (doI > 0)
+                                      {
+                                          thisLevel.displayFields[doI] = thisField;
+                                      }
+                                  }
+                              });
+                          });
+                          {
+                              var firstFieldName = 
+                                  firstProperty(thisLevel.fields);
+                              var idfield = thisLevel.fields[firstFieldName];
+                              var tablename = idfield.tablename;
+                              if (tablename)
+                              {
+                                  var imgsrc = "/images/indexes/" + tablename + ".gif";
+                                  $.get(imgsrc,
+                                        function(response) {
+                                            thisLevel.imgsrc = imgsrc;
+                                        }
+                                       )
+                                      .error(function (r) {
+                                          thisLevel.imgsrc = "/images/indexes/default1.gif";
+                                      });
+                              }
+                          }
+                      });
+                      var allFieldsInputName = "";
+                      for (l in thisDefinition.levels)
+                      {
+                          var level = thisDefinition.levels[l];
+                          for (f in level.fields)
+                          {
+                              var shortname = f;
+                              var field = level.fields[f];
+                              if (field.fieldtype == "string")
+                              {
+                                  if (allFieldsInputName == "")
+                                  {
+                                      allFieldsInputName = 
+                                          defnkey 
+                                          + "." + defnkey
+                                          + "." + shortname
+                                          + ".begins.text.1";
+                                  }
+                                  else
+                                  {
+                                      allFieldsInputName = 
+                                          defnkey 
+                                          + "." + defnkey
+                                          + "." + shortname
+                                          + ".or."
+                                          + allFieldsInputName;
+                                  }
+                              }
+                          }
+                      }
+                      thisDefinition.allFieldsInputName = allFieldsInputName;
+                  }
+                 );
+        }
+        // In this mock up, we steal the icons and names from the original browser /search.
+        // Retain the key/image/name in eCMSearchState.views.
+        // Eventually, eCMSearchState.views can be returned complete as a json object by the .NET DAS.
+        function setviews(search) 
+        {
+            //
+            // steal the contents of the /search body and embed it a hidden stage div.
+            var stage = 
+                stringToBodyDiv(search)
+                .addClass("searchstage")
+                .appendTo($("body"))
+                .hide();
+            var returnresultasselect = $("#returnresultas");
+            //
+            // Walk the stage and build eCMSearchState.views.
+            $(".searchstage #search").each(
+                function (i) {
+                    var img = $(this).find("img");
+                    var img_src = img.attr("src");
+                    var img_href = img.parent().attr("href");
+                    var key = img_href.split("=")[1].split("&")[0];
+                    var name = $(this).find("[target='_self']").contents().text();
+                    eCMSearchState.views[key] =
+                        {
+                            image_src: img_src,
+                            name: name
+                        };
+                    $(document.createElement("option"))
+                        .attr("value", key)
+                        .text(name)
+                        .appendTo(returnresultasselect);
+                }
+            );
+            //
+            // Create the advanced search button divs..
+            $("#advancedbuttoncontainerclipped").css({
+                //height: "80px",
+                width: "200px"
+            });
+            var container = $("#advancedbuttoncontainerlong");
+            var containerbase = container.find(".shiftvinculum");
+            //
+            for (v in eCMSearchState.views)
+            {
+                /*
+                  <!-- Each view button will have markup like:-->
+                  <div id="asf_properties_a_div" class="asf_a tabbutton">
+                  <a id="asf_properties_a">
+                  <img src=".../properties.png" alt="Properties" title="Properties"></img>
+                  </a>
+                  <div class="tabbuttonlabel">Properties</div>
+                  </div>
+                */
+                var vanillatooltiptext = 
+                    "Click to edit " + eCMSearchState.views[v]["name"] + " search fields";
+                var icondiv = 
+                    $(document.createElement("div"))
+                    .addClass("tabbutton asf_a_div")
+                    .attr({id: "asf_" + v + "_a_div"})
+                    .data("vanillatooltiptext", vanillatooltiptext)
+                    .tooltip(vanillatooltiptext, "top bottom");
+                var paddingkernel =
+                    $(document.createElement("div"))
+                    .addClass("tabbuttonkernel");
+                var anchor = 
+                    $(document.createElement("a"))
+                    .addClass("asf_a tabbutton")
+                    .attr({id: "asf_" + v + "_a"});
+                anchor.viewkey = v;
+                var img = 
+                    $(document.createElement("img"))
+                    .addClass("searchicon")
+                    .attr(
+                        {
+                            src: eCMSearchState.views[v]["image_src"],
+                            //alt: eCMSearchState.views[v]["name"],
+                            //title: eCMSearchState.views[v]["name"]
+                        });
+                var label = 
+                    $(document.createElement("div"))
+                    .text(eCMSearchState.views[v]["name"])
+                    .addClass("tabbuttonlabel");
+                icondiv.insertBefore(containerbase);
+                paddingkernel.appendTo(icondiv);
+                anchor.appendTo(paddingkernel);
+                img.appendTo(anchor);
+                label.appendTo(paddingkernel);
+                //
+                // get xml_definition for this viewcode
+                getXmlDefinition(v);
+            }
+            resizeAdvancedbuttoncontainerclipped();
+            $(".asf_a_div").click(function() {
+                var aid = $(this).find(".asf_a").attr("id");
+                if (!eCMSearchState.currentASFID
+                    && eCMSearchState.currentSF
+                    && eCMSearchState.currentASFID == thisid)
+                {
+                    return;
+                }
+                advancedtoggleselect(aid);
+            });
+        }
+        function resizeAdvancedbuttoncontainerclipped()
+        {
+            var advancedsearchtabs = $("#advancedsearchtabs");
+            var fieldsShowing = 
+                advancedsearchtabs
+                .find(".advancedsearchfields")
+                .not(":hidden");
+            var hidden = advancedsearchtabs.is(":hidden");
+            advancedsearchtabs.show();
+            var advancedbuttoncontainerclipped = 
+                $("#advancedbuttoncontainerclipped");
+            var parent = advancedbuttoncontainerclipped.parent();
+            var parentOffset = parent.offset();
+            var rightHardLimit = parent.width() - 30;
+            var rightLimit = rightHardLimit;
+            var leftLimit = advancedbuttoncontainerclipped.offset().left;
+            var maxClippedWidth = rightLimit - leftLimit;
+            var farRightOverlappingButton =
+                $("#advancedbuttoncontainerlong")
+                .find(".asf_a_div")
+                .filter(function () {
+                    var left = $(this).offset().left;
+                    return left < rightLimit && left + $(this).width() > rightLimit;
+                });
+            if (farRightOverlappingButton.length)
+            {
+                rightLimit = farRightOverlappingButton.first().offset().left;
+            }
+            var clippedWidth = rightLimit - leftLimit;
+            advancedbuttoncontainerclipped.animate({
+                width: clippedWidth.toString() + "px"
+            });
+            var farRightButtons =
+                $("#advancedbuttoncontainerlong")
+                .find(".asf_a_div")
+                .filter(function () {
+                    return $(this).offset().left > rightLimit;
+                });
+            var farLeftButtons =
+                $("#advancedbuttoncontainerlong")
+                .find(".asf_a_div")
+                .filter(function () {
+                    return $(this).offset().left < leftLimit;
+                });
+            if (farLeftButtons.length)
+            {
+                var left = (leftLimit - parentOffset.left - 30);
+                var cssLeftShiftLeft = "0px";
+                //
+                var longDiv = $("#advancedbuttoncontainerlong");
+                var currentLeft = longDiv.offset().left;
+                var currentHiddenLeft = parentOffset.left - currentLeft;
+                if (currentHiddenLeft > maxClippedWidth)
+                {
+                    var idealNextLeft = 
+                        currentHiddenLeft - maxClippedWidth;
+                    var minPossibleleft = currentHiddenLeft;
+                    farLeftButtons.each(function () {
+                        var thisLeft = 
+                            $(this).offset().left - currentLeft;
+                        if (thisLeft < minPossibleleft
+                            && thisLeft >= idealNextLeft)
+                        {
+                            minPossibleleft = thisLeft;
+                        }
+                    });
+                    cssLeft = -minPossibleleft;
+                    cssLeftShiftLeft = cssLeft.toString() + "px";
+                }
+                $("#advancedbuttoncontainerlongshiftleft")
+                    .css({
+                        left: left.toString() + "px",
+                        top: "0px"
+                    })
+                    .fadeIn()
+                    .unbind("click")
+                    .click(function () {
+                        $("#advancedbuttoncontainerlong")
+                            .animate(
+                                {
+                                    left: cssLeftShiftLeft
+                                },
+                                {
+                                    complete: 
+                                    resizeAdvancedbuttoncontainerclipped
+                                });
+                        return false;
+                    });
+            }
+            else
+            {
+                $("#advancedbuttoncontainerlongshiftleft").fadeOut();
+            }
+            if (farRightButtons.length || farRightOverlappingButton.length)
+            {
+                var left = 
+                    (rightHardLimit - parentOffset.left);
+                var shiftSize = 0;
+                var longDiv = $("#advancedbuttoncontainerlong");
+                var currentLeft = longDiv.offset().left;
+                if (farRightOverlappingButton.length)
+                {
+                    shiftSize = 
+                        farRightOverlappingButton.offset().left - currentLeft;
+                }
+                else
+                {
+                    shiftSize = clippedWidth;
+                }
+                var cssLeft = currentLeft - parentOffset.left - shiftSize;
+                var cssLeftShiftRight = cssLeft.toString() + "px";
+                $("#advancedbuttoncontainerlongshiftright")
+                    .css({
+                        left: left.toString() + "px",
+                        top: "0px"
+                    })
+                    .fadeIn()
+                    .unbind("click")
+                    .click(function () {
+                        $("#advancedbuttoncontainerlong")
+                            .animate(
+                                {
+                                    left: cssLeftShiftRight
+                                },
+                                {
+                                    complete: 
+                                    resizeAdvancedbuttoncontainerclipped
+                                });
+                        return false;
+                    });
+            }
+            else
+            {
+                $("#advancedbuttoncontainerlongshiftright").fadeOut();
+            }
+            if (hidden)
+            {
+                advancedsearchtabs.hide();
+            }
+            if (fieldsShowing.length)
+            {
+                var firstFields = fieldsShowing.first();
+                var anchor = $(id(firstFields.data("viewdetails").buttonId));
+                if (anchor.offset().left < leftLimit
+                    || 
+                    anchor.offset().left > rightLimit)
+                {
+                    // The anchor for the fields that were being 
+                    // displayed have shifted away.
+                    // Choose some anchor that is being displayed and select it.
+                    var farRightOverlappingButton =
+                        $("#advancedbuttoncontainerlong")
+                        .find(".asf_a_div")
+                        .filter(function () {
+                            var left = $(this).offset().left;
+                            return left < rightLimit && left > leftLimit;
+                        })
+                        .first()
+                        .trigger("click");
+                    
+                }
+            }
+        }
+        function ensureAdvancedAnchorIsVisible(buttonId)
+        {
+            var anchor = $(id(buttonId)).closest(".asf_a_div");
+            var advancedbuttoncontainerclipped = 
+                $("#advancedbuttoncontainerclipped");
+            var leftLimit = advancedbuttoncontainerclipped.offset().left;
+            var rightLimit = 
+                advancedbuttoncontainerclipped.offset().left
+                + 
+                advancedbuttoncontainerclipped.width();
+            if (anchor.offset().left < leftLimit
+                || 
+                anchor.offset().left > rightLimit)
+            {
+                var longDiv = $("#advancedbuttoncontainerlong");
+                var longLeft = longDiv.offset().left;
+                var anchorLeft = anchor.offset().left - longDiv.offset().left;
+                $("#advancedbuttoncontainerlong")
+                    .animate(
+                        {
+                            left: (-anchorLeft).toString() + "px"
+                        },
+                        {
+                            complete:
+                            resizeAdvancedbuttoncontainerclipped
+                        });
+            }
+        }
+        function setsearch(powersearch2) 
+        {
+            // steal the contents of the powersearch2 body
+            var stage = 
+                stringToBodyDiv(powersearch2)
+                .addClass("stage")
+                .appendTo($("body"))
+                .hide();
+            //
+            $(".stage .CollapseParent").each(
+                function (i) {
+                    var key = $(this).children("a").attr("name");
+                    if (eCMSearchState.views[key])
+                    {
+                        var tabId = key + "_searchfieldswrapper";
+                        var buttonId = "asf_" + key + "_a";
+                        var viewdetails = {
+                            tabId: tabId, 
+                            viewkey: key, 
+                            buttonId: buttonId
+                        };
+                        eCMSearchState.viewmap[buttonId] = viewdetails;
+                        // An advancedsearchfields "tab" will have markup like:
+                        /*
+                            <div class="advancedsearchfields" id="customer_searchfieldswrapper">
+                                <div class="advancedsearchfieldstitle">Customer</div>
+                                <table class="advancedsearchfieldstable">
+                                    <tr>
+                                      <td class="asflabel">All fields</td><td class="asfinput"><input type="text"></td>
+                                    </tr>
+                                    <tr>
+                                      <td class="asflabel">Business, Given, Surname</td><td class="asfinput"><input type="text"></td>
+                                    </tr>
+                                </table>
+                           </div>
+                        */
+                        var advancedsearchfieldsdiv = 
+                            $(document.createElement("div"))
+                            .addClass("advancedsearchfields")
+                            .attr({id: tabId})
+                            .data("viewdetails", viewdetails);
+                        /*
+                        var titleDiv =
+                            $(document.createElement("div"))
+                            .addClass("advancedsearchfieldstitle")
+                            .appendTo(advancedsearchfieldsdiv)
+                            .data("viewdetails", viewdetails);
+                        var titleTitleDiv =
+                            $(document.createElement("div"))
+                            .appendTo(titleDiv)
+                            .css({
+                                display: "inline",
+                                float: "left",
+                                padding: "10px"
+                            })
+                            .data("viewdetails", viewdetails);
+                        var titleH2 =
+                            $(document.createElement("h2"))
+                            .appendTo(titleTitleDiv)
+                            .text(eCMSearchState.views[key].name)
+                            .data("viewdetails", viewdetails);
+                        var rightDiv =
+                            $(document.createElement("div"))
+                            .addClass("advancedsearchfieldstitleright")
+                            .css({
+                                display: "inline",
+                                float: "right",
+                                padding: "5px"
+                            })
+                            .appendTo(titleDiv)
+                            .data("viewdetails", viewdetails);
+                        var clearA = 
+                            $(document.createElement("a"))
+                            .addClass("clearButton actionButton")
+                            .click(function () 
+                                   {
+                                       $(id(tabId) + " input[type='text']")
+                                           .updateFormInput("");
+                                       $(id(tabId) + " input[type='checkbox']")
+                                           .attr("value", "on")
+                                           .attr("checked", "checked")
+                                           .trigger("change");
+                                       $(id(tabId) + " select")
+                                           .attr("value", "-1")
+                                           .trigger("change");
+                                   })
+                            //.css("width", "100px")
+                            .appendTo(rightDiv)
+                            .text("Clear")
+                            .data("viewdetails", viewdetails);
+                        var vinculum =
+                            $(document.createElement("div"))
+                            .addClass("vinculum")
+                            .appendTo(titleDiv);
+                        */
+                        var table =
+                            $(document.createElement("table"))
+                            .addClass("advancedsearchfieldstable")
+                            .appendTo(advancedsearchfieldsdiv)
+                            .data("viewdetails", viewdetails);
+                        var allfieldstr =
+                            $(document.createElement("tr"))
+                            .appendTo(table)
+                            .data("viewdetails", viewdetails);
+                        var allfieldslabeltd =
+                            $(document.createElement("td"))
+                            .appendTo(allfieldstr)
+                            .css("border", "none")
+                            .data("viewdetails", viewdetails);
+                        var allfieldslabel =
+                            $(document.createElement("label"))
+                            .addClass("asflabel")
+                            .text("Any field")
+                            .appendTo(allfieldslabeltd)
+                            .data("viewdetails", viewdetails);
+                        var allfieldsinputtd =
+                            $(document.createElement("td"))
+                            .addClass("asfinput")
+                            .appendTo(allfieldstr)
+                            .css("border", "none")
+                            .data("viewdetails", viewdetails);
+                        var defnKey = key;
+                        if (defnKey == "document")
+                        {
+                            defnKey = "docs";
+                        }
+                        var inputName = "";
+                        if (eCMSearchState.xmlDefinitions[defnKey])
+                        {
+                            inputName = 
+                                eCMSearchState.xmlDefinitions[defnKey].allFieldsInputName;
+                        }
+                        var allfieldsinputtdinput =
+                            $(document.createElement("input"))
+                            .attr({
+                                type: "text",
+                                name: inputName
+                            })
+                            .addClass("inputallfields focushere bindtosummary")
+                            .appendTo(allfieldsinputtd)
+                            .data("caption", "Any field")
+                            .data("viewdetails", viewdetails);
+                        advancedsearchfieldsdiv
+                            .appendTo($("#advancedsearchtabs"))
+                            .hide();
+                        var otherTrs = 
+                            $(this).find("tr")
+                            .appendTo(table)
+                            .css("border", "none");
+                        otherTrs.find(".caption").addClass("asflabel");
+                        otherTrs.find("td").css("border", "none");
+                        // This function just steps up to get the label
+                        var linkCaption = function(i, element) {
+                            var tr = $(element).closest("tr");
+                            var caption = tr.find("td").first().text();
+                            $(element).data("caption", caption);
+                        };
+                        //
+                        otherTrs.find("input")
+                            .data("viewdetails", viewdetails)
+                            .addClass("bindtosummary")
+                            .each(linkCaption);
+                        otherTrs.find("select")
+                            .data("viewdetails", viewdetails)
+                            .addClass("bindtosummary")
+                            .each(linkCaption);
+                        otherTrs.find("input[name*='between.datetime.1']")
+                            .each(function () {
+                                var td = $(this).parent();
+                                td
+                                    .children()
+                                    .hide()
+                                    .removeClass("bindtosummary");
+                                td.contents()
+                                    .filter(function () { return this.nodeType != 1;})
+                                    .remove();
+                                var idStem =
+                                    $(this)
+                                    .attr("name")
+                                    .replace(/between\.datetime\.1/, "");
+                                var idStemToNumber =
+                                    $(this)
+                                    .attr("name")
+                                    .replace(/between\.datetime\.1/, "between.datetime");
+                                var fromDateId = idStem + "fromDate";
+                                var toDateId = idStem + "toDate";
+                                var template = [
+                                    {type: "field",
+                                     value: fromDateId},
+                                    {type: "text",
+                                     value: "to"},
+                                    {type: "field",
+                                     value: toDateId}
+                                ];
+                                var fromDay = 
+                                    td.find("input[name='" 
+                                            + idStemToNumber + ".1']");
+                                var fromMonth = 
+                                    td.find("input[name='" 
+                                            + idStemToNumber + ".2']");
+                                var fromYear = 
+                                    td.find("input[name='" 
+                                            + idStemToNumber + ".3']"); 
+                               var fromDateInput =
+                                    $(document.createElement("input"))
+                                    .attr("id", fromDateId)
+                                    .attr("name", fromDateId)
+                                    .attr("type", "text")
+                                    .addClass("maskDT dontsend")
+                                    .appendTo(td)
+                                    .data({
+                                        dayinput: fromDay,
+                                        monthinput: fromMonth,
+                                        yearinput: fromYear,
+                                        template: template
+                                    });
+                                fromDay.data({
+                                    type: "day",
+                                    datemask: fromDateInput
+                                });
+                                fromMonth.data({
+                                    type: "month",
+                                    datemask: fromDateInput
+                                });
+                                fromYear.data({
+                                    type: "year",
+                                    datemask: fromDateInput
+                                });
+                                $(document.createElement("div"))
+                                    .text("to")
+                                    .css({
+                                        "display": "inline",
+                                        "padding-left": "5px",
+                                        "padding-right": "5px"
+                                    })
+                                    .appendTo(td);
+                                var toDay = 
+                                    td.find("input[name='" 
+                                            + idStemToNumber + ".6']");
+                                var toMonth = 
+                                    td.find("input[name='" 
+                                            + idStemToNumber + ".7']");
+                                var toYear = 
+                                    td.find("input[name='" 
+                                            + idStemToNumber + ".8']"); 
+                                var toDateInput =
+                                    $(document.createElement("input"))
+                                    .attr("id", toDateId)
+                                    .attr("name", toDateId)
+                                    .attr("type", "text")
+                                    .addClass("maskDT dontsend")
+                                    .appendTo(td)
+                                    .data({
+                                        dayinput: td.find("input[name='" 
+                                                          + idStemToNumber 
+                                                          + ".6']"),
+                                        monthinput: td.find("input[name='" 
+                                                            + idStemToNumber 
+                                                            + ".7']"),
+                                        yearinput: td.find("input[name='" 
+                                                           + idStemToNumber 
+                                                           + ".8']"),
+                                        template: template
+                                    });
+                                toDay.data({
+                                    type: "day",
+                                    datemask: toDateInput
+                                });
+                                toMonth.data({
+                                    type: "month",
+                                    datemask: toDateInput
+                                });
+                                toYear.data({
+                                    type: "year",
+                                    datemask: toDateInput
+                                });
+                            });
+                        otherTrs.find("input.maskDT")
+                            .data("viewdetails", viewdetails)
+                            .addClass("bindtosummary")
+                            .each(linkCaption);
+                        try
+                        {
+                            otherTrs
+                                .find("input.maskDT")
+                                .datepicker({
+                                    autoSize: true,
+                                    dateFormat: constants.DATEFORMAT,
+                                    onClose: function () {
+                                        $(this).addClass("focushere").focus();
+                                    }
+                                });
+                        }
+                        catch (err)
+                        {
+                            reportMessage(err.toString());
+                        }
+                    }
+                    else
+                    {
+                        reportMessage(constants.ERROR, "View not found: " + key);
+                    }
+                }
+            );
+            $("#advancedsearchtabs")
+                .find("input")
+                .change(advancedBindData)
+                .keyup(advancedBindData);
+            $("#advancedsearchtabs").find("select").change(advancedBindData);
+            $(".asclear").trigger("click");
+            // This is to work around a display bug with datepicker 
+            // before it has posted for the first time.
+            $("#ui-datepicker-div").hide();
+            $(".retrieveButton").click(advancedOrQuickSearch);
+            //$(".advancedsearchfields").addClass("hideforresults");
+            //$(window).trigger("hashchange");
+            $(window).trigger("hashchange");
+        }
+        function resetFocus()
+        {
+            var nothidden = $(".advancedsearchfields").not(":hidden");
+            nothidden.find(".focushere").removeClass("focushere");
+            nothidden.find(".inputallfields").addClass("focushere");
+        }
+        function slideUpAdvancedsearchfields(delay)
+        {
+            resetFocus();
+            var nothidden = $(".advancedsearchfields").not(":hidden");
+            nothidden.slideUp(delay);
+            unselectSF();
+        }
+        function slideUpQuicksearchfields(delay)
+        {
+            var nothidden = $("#quicksearchfields").not(":hidden");
+            nothidden.slideUp(delay);
+            $(id("quicksearchbutton_div"))
+                .tooltip("Click to edit search fields", "top bottom");
+        }
+        function hidePopups()
+        {
+            $(".ecmtooltip").remove();
+            $(".centerpopup").fadeOut(800);
+        }
+        function getMessageDiv(msg)
+        {
+            var message =
+                $(document.createElement("div"))
+                .addClass("centerpopup")
+                .css("font-size", "200%")
+                .text(msg)
+                .appendTo($("body"))
+                .hide();
+            return message;
+        }
+        function popupCentreMessage(msg)
+        {
+            var message = getMessageDiv(msg);
+            resizeAndPositionPopups();
+            message
+                .fadeIn(300)
+                .delay(1000)
+                .fadeOut(800, function () {
+                    $(this).remove();
+                });
+        }
+        function popupPersistentCentreMessage(msg)
+        {
+            var message = getMessageDiv(msg);
+            resizeAndPositionPopups();
+            message.fadeIn(100);
+        }
+        function showNoResults(viewname)
+        {
+            hidePopups();
+            popupCentreMessage("No " + viewname + " results found.");
+        }
+        function showSearching()
+        {
+            hidePopups();
+            popupPersistentCentreMessage("Searching ...");
+        }
+        function showResults(resultsStage)
+        {
+            hidePopups();
+            $("#results").hide();
+            var resultscountsdiv = 
+                $("#resultscounts");
+            $("#resultslist")
+                .html("")
+                .append(resultsStage);
+            $("#results").show();
+            resultsStage.data("matriarch", 1);
+            var dataDiv = resultsStage.data("datadiv");
+            if (dataDiv)
+            {
+                applyAdvancedSearchResultsSizeKeys(dataDiv);
+                //resultsStage.find('.scrollbody').maxHeightToBottom();
+                var resultscounts = dataDiv.data("resultscounts");
+                if (resultscounts)
+                {
+                    renderResultsCounts(resultscountsdiv, resultscounts);
+                    //resultscountsdiv.find('.scrollbody').maxHeightToBottom();
+                    var title;
+                    if (resultscounts.total < 500)
+                    {
+                        title = "Your search returned " + resultscounts.total + " results";
+                    }
+                    else
+                    {
+                        title = "Your search returned more than 499 results";
+                    }
+                    resultsStage
+                        .data("title", title)
+                        .find(".resultstitlediv .title")
+                        .text(title);
+                }
+            }
+            eCMSearchState.hidemachine.setState("results", 1);
+        }
+        function renderResultsCounts(resultscountsdiv, resultscounts)
+        {
+            resultscountsdiv.html("");
+            var titleDiv =
+                $(document.createElement("div"))
+                .addClass("resultstitlediv")
+                .appendTo(resultscountsdiv)
+                .append(
+                    $(document.createElement("div"))
+                        .addClass("resultstitledivleft")
+                        .append(
+                            $(document.createElement("div"))
+                                .text("Total Results (" 
+                                      + resultscounts.total + ")")
+                        )
+                )
+                .visibleHeader()
+            ;
+            var scrollBody =
+                $(document.createElement("div"))
+                .addClass("scrollbody")
+                .appendTo(resultscountsdiv);
+            var dates = resultscounts["dates"];
+            if (dates)
+            {
+                var datesdiv =
+                    $(document.createElement("div"))
+                    .appendTo(scrollBody);
+                for (d in dates)
+                {
+                    var dtotal = dates[d];
+                    var adiv =
+                        $(document.createElement("div"))
+                        .addClass("resultscount")
+                        .data("selectclass", dateClass(d))
+                        .appendTo(datesdiv)
+                        .text(d + " (" + dtotal + ")")
+                        .tooltip("Click to filter results", "top bottom", "left")
+                        .click(countSelected);
+                }
+                datesdiv.moreorless("Date", 3);
+            }
+            var classabbrevs = resultscounts["classabbrevs"];
+            if (classabbrevs)
+            {
+                var classabbrevsdiv =
+                    $(document.createElement("div"))
+                    .appendTo(scrollBody);
+                classabbrevs.arr.sort(function (a, b) {
+                    return b.count - a.count;
+                });
+                for (n in classabbrevs.arr)
+                {
+                    var classtotal = classabbrevs.arr[n].count;
+                    var classabbrev = classabbrevs.arr[n].name;
+                    if (classtotal)
+                    {
+                        var adiv =
+                            $(document.createElement("div"))
+                            .addClass("resultscount")
+                            .data("selectclass", classAbbrevClass(classabbrev))
+                            .appendTo(classabbrevsdiv)
+                            .text(classabbrev.toString() + " (" + classtotal.toString() + ")")
+                            .tooltip("Click to filter results", "top bottom", "left")
+                            .click(countSelected);
+                    }
+                }
+                classabbrevsdiv.moreorless("Class", 3);
+            }
+            var mimetypedescs = resultscounts["mimetypedescs"];
+            if (mimetypedescs)
+            {
+                var mimetypedescsdiv =
+                    $(document.createElement("div"))
+                    .appendTo(scrollBody);
+                mimetypedescs.arr.sort(function (a, b) {
+                    return b.count - a.count;
+                });
+                for (n in mimetypedescs.arr)
+                {
+                    var typetotal = mimetypedescs.arr[n].count;
+                    var mimetypedesc = mimetypedescs.arr[n].name;
+                    if (typetotal)
+                    {
+                        var adiv =
+                            $(document.createElement("div"))
+                            .addClass("resultscount")
+                            .data("selectclass", typeClass(mimetypedesc))
+                            .appendTo(mimetypedescsdiv)
+                            .text(mimetypedesc.toString() + " (" + typetotal.toString() + ")")
+                            .tooltip("Click to filter results", "top bottom", "left")
+                            .click(countSelected);
+                    }
+                }
+                mimetypedescsdiv.moreorless("Type", 3);
+            }
+        }
+        function countSelected(e)
+        {
+            var resultscountdiv = 
+                $(this)
+                .not(".countselected");
+            var moreorlesscontainer =
+                $(this)
+                .closest(".moreorlesswrapper");
+            moreorlesscontainer
+                .find(".resultscount.countselected")
+                .removeClass("countselected")
+                .tooltip("Click to filter results", "top bottom", "left");
+            if (resultscountdiv.length)
+            {
+                $(this)
+                    .addClass("countselected")
+                    .tooltip("Click to remove this results filter", "top bottom", "left")
+                ;
+            }
+            moreorlesscontainer.moreorlessrepaint();
+            filterResultElements();
+            return false;
+        }
+        function filterResultElements()
+        {
+            var countSelected = [];
+            $("#resultscounts")
+                .find(".countselected")
+                .each(function () {
+                    countSelected.push($(this).data("selectclass"));
+                });
+            $("#resultslist").find(".counthideme").removeClass("counthideme");
+            if (!countSelected.length)
+            {
+                $("#resultslist").find(".resultselement:hidden").show();
+            }
+            else
+            {
+                var eventLimit = 20;
+                $("#resultslist")
+                    .find(".resultselement")
+                    .each(function () {
+                        for (i in countSelected)
+                        {
+                            var selectclass = countSelected[i];
+                            if (!$(this).is(cl(despace(selectclass))))
+                            {
+                                $(this).addClass("counthideme");
+                                return;
+                            }
+                        }
+                        var showThis = $(this).filter(":hidden");
+                        if (showThis.length)
+                        {
+                            if (eventLimit)
+                            {
+                                --eventLimit;
+                                showThis.show(300);
+                            }
+                            else
+                            {
+                                showThis.show();
+                            }
+                        }
+                    });
+                var hidethese =
+                    $("#resultslist")
+                    .find(".counthideme")
+                    .not(":hidden");
+                if (hidethese.length > 20)
+                {
+                    hidethese.hide();
+                }
+                else
+                {
+                    hidethese.hide(50);
+                }
+            }
+        }
+        $(window).resize(function () {
+            // we should wait until the resize is complete to avoid processing but ..
+            $("#results")
+                .not(":hidden")
+                .find(".resultsdisplaydiv")
+                .each(function () {
+                    var datadiv = $(this).data("datadiv");
+                    if (datadiv)
+                    {
+                        applyAdvancedSearchResultsSizeKeys(datadiv);
+                    }
+                    /*
+                    if ($(this).data("matriarch"))
+                    {
+                        $(this)
+                            .find('.scrollbody')
+                            .first()
+                            .maxHeightToBottom()
+                        ;
+                    }
+                    */
+                });
+            //$("#resultscontrol").find('.scrollbody').maxHeightToBottom();
+            resizeAdvancedbuttoncontainerclipped();
+            resizeAndPositionPopups();
+        });
+        function resizeAndPositionPopups()
+        {
+            $(".centerpopup")
+                .each(function () {
+                    var width = $(this).outerWidth();
+                    var height = $(this).outerHeight();
+                    var windowHeight = $(window).height();
+                    var windowWidth = $(window).width();
+                    var left = (windowWidth - width) / 2;
+                    var top = (windowHeight - height) / 2;
+                    var parentOffset = $(this).parent().offset();
+                    if (parentOffset)
+                    {
+                        var parentTop = parentOffset.top;
+                        var parentLeft = parentOffset.left;
+                        left -=parentLeft;
+                        top -= parentTop;
+                    }
+                    $(this).css({
+                        top: top.toString() + "px",
+                        left: left.toString() + "px"
+                    });
+                });
+        }
+        function ensureFormattedDocDate(rowN)
+        {
+            if (rowN)
+            {
+                if (!rowN.formatDocDate)
+                {
+                    if (rowN.docdate)
+                    {
+                        rowN.parsedDocDate =
+                            new Date(Date.parse(rowN.docdate.replace(/ .*/, "")));
+                        if (rowN.parsedDocDate)
+                        {
+                            try
+                            {
+                                rowN.formattedDocDate =
+                                    $.datepicker
+                                    .formatDate(constants.DATEFORMAT, rowN.parsedDocDate);
+                            }
+                            catch (err)
+                            {
+                                rowN.formattedDocDate = "01 Jan 1970";
+                            }
+                        }
+                    }
+                    else
+                    {
+                        rowN.formatDocDate = "";
+                    }
+                }
+            }
+        }
+        function resultsTitleDivSetTitle(resultsTitleDiv, titleText)
+        {
+            $(resultsTitleDiv).find(".title").text(titleText);
+        }
+        function getResultsTitleDiv(viewcode, resultsDisplayDiv)
+        {
+            var resultsTitleDiv = 
+                $(document.createElement("div"))
+                .addClass("resultstitlediv");
+            var left =
+                $(document.createElement("div"))
+                .addClass("resultstitledivleft")
+                .appendTo(resultsTitleDiv);
+            var h2 = 
+                $(document.createElement("div"))
+                .addClass("title")
+                .appendTo(left);
+            var right =
+                $(document.createElement("div"))
+                .addClass("resultstitledivright")
+                .appendTo(resultsTitleDiv);
+            var removeDiv =
+                $(document.createElement("div"))
+                .addClass("resultstitleremove")
+                .appendTo(right)
+                .data("removethis", resultsDisplayDiv)
+                .click(function () {
+                    var removeThis = $(this).data("removethis");
+                    if (removeThis)
+                    {
+                        if (removeThis.data("matriarch"))
+                        {
+                            resultsDisappearing();
+                        }
+                        removeThis.slideUp(300, function () {
+                            $(this)
+                                .visibleHeadersRemove()
+                                .remove();
+                        });
+                    }
+                    return false;
+                })
+                //.fadeTo(0, 0)
+            ;
+            var img =
+                $(document.createElement("img"))
+                .attr("src", "resources/images/closeCross12.png")
+                .appendTo(removeDiv);
+            var selectResultsViewAnchorDiv =
+                $(document.createElement("div"))
+                .addClass("resultstitleselectresultsview")
+                .text("list")
+                .appendTo(right);
+            {
+                var selectResultsViewMenuDiv =
+                    $(document.createElement("div"))
+                    .addClass("resultstitleselectresultsviewmenu")
+                    .appendTo(resultsTitleDiv);
+                $(document.createElement("div"))
+                    .appendTo(selectResultsViewMenuDiv)
+                    .text("icons")
+                    .click(function () {
+                        alert("icons");
+                        selectResultsViewMenuDiv.slideUp(200);
+                    });
+                $(document.createElement("div"))
+                    .appendTo(selectResultsViewMenuDiv)
+                    .text("list")
+                    .click(function () {
+                        alert("list");
+                        selectResultsViewMenuDiv.slideUp(200);
+                    });
+                $(document.createElement("div"))
+                    .appendTo(selectResultsViewMenuDiv)
+                    .text("details")
+                    .click(function () {
+                        alert("details");
+                        selectResultsViewMenuDiv.slideUp(200);
+                    });
+                selectResultsViewAnchorDiv
+                    .click(function () {
+                        // superimpose menu over the anchor
+                        var anchorOffset = $(this);
+                        var parent = selectResultsViewMenuDiv.parent();
+                        selectResultsViewMenuDiv
+                            .css({
+                                left: anchorOffset.offset().left - parent.offset().left,
+                                top: anchorOffset.offset().top - parent.offset().top
+                            })
+                            .slideDown(200);
+                    });
+                selectResultsViewMenuDiv.hide();
+                selectResultsViewAnchorDiv.hide();
+            }
+            //
+            // Document results are special
+            if (viewcode == "docs")
+            {
+                resultsTitleDivSetTitle(resultsTitleDiv, "Documents");
+            }
+            else
+            {
+                resultsTitleDivSetTitle(resultsTitleDiv, eCMSearchState.views[viewcode].name);
+            }
+            resultsTitleDiv.click(function () {
+                alternateJsonResults(resultsDisplayDiv);
+                return false;
+            });
+            return resultsTitleDiv;
+        }
+        function showJsonResults(json)
+        {
+            var viewcode = firstProperty(json);
+            var layout;
+            var resultsAreDocs = (viewcode == "docs");
+            sizeResultsPanels(resultsAreDocs);
+            if (resultsAreDocs)
+            {
+                layout = "detail";
+            }
+            else
+            {
+                layout = "list";
+            }
+            var resultsDisplayDiv = 
+                getJsonDisplayResults(json, 0, layout);
+            showResults(resultsDisplayDiv);
+        }
+        function sizeResultsPanels(resultsAreDocs)
+        {
+            if (resultsAreDocs)
+            {
+                $("#resultscontrol")
+                    .show();
+                $("#resultslist")
+                    .css({
+                        width: "84%",
+                        margin: "0px",
+                        "margin-left": "2px"
+                    });
+            }
+            else
+            {
+                $("#resultscontrol").hide();
+                $("#resultslist")
+                    .css({
+                        width: "100%",
+                        margin: "0px auto"
+                    });
+            }
+        }
+        // layout in ["tiles", "detail", "list"]
+        function getJsonDisplayResults(json, parentdisplaylevel, layout)
+        {
+            var resultsDisplayDiv = 
+                $(document.createElement("div"))
+                .addClass("resultsdisplaydiv")
+                .data("displaylevel", parentdisplaylevel)
+                .data("layout", layout)
+                .data("searchresultsdata", json);
+            var viewcode = firstProperty(json);
+            var titleDiv = 
+                getResultsTitleDiv(viewcode, resultsDisplayDiv)
+                .appendTo(resultsDisplayDiv)
+                .visibleHeader()
+            ;
+            var dataDiv = 
+                jsonToDiv(json, parentdisplaylevel, layout)
+                .appendTo(resultsDisplayDiv)
+                .data("titlediv", titleDiv);
+            titleDiv.data("datadiv", dataDiv);
+            resultsDisplayDiv.data("datadiv", dataDiv);
+            resultsDisplayDiv.data("titlediv", titleDiv);
+            return resultsDisplayDiv;
+        }
+        function alternateJsonResults(resultsDisplayDiv)
+        {
+            var json = resultsDisplayDiv.data("searchresultsdata");
+            var level = resultsDisplayDiv.data("displaylevel");
+            var layout = resultsDisplayDiv.data("layout");
+            if (layout == "list")
+            {
+                layout = "tiles";
+            }
+            else if (layout == "tiles")
+            {
+                layout = "detail";
+            }
+            else if (layout == "detail")
+            {
+                layout = "list";
+            }
+            var title = resultsDisplayDiv.data("title");
+            var newJsonDisplayResults = 
+                getJsonDisplayResults(json, level, layout);
+            if (title)
+            {
+                newJsonDisplayResults
+                    .data("title", title)
+                    .find(".resultstitlediv .title")
+                    .text(title);
+            }
+            var rowurlclass = resultsDisplayDiv.data("rowurlclass");
+            if (rowurlclass)
+            {
+                newJsonDisplayResults
+                    .addClass(rowurlclass)
+                    .data("rowurlclass", rowurlclass);
+            }
+            if (resultsDisplayDiv.data("matriarch"))
+            {
+                newJsonDisplayResults.data("matriarch", 1);
+            }
+            else
+            {
+                newJsonDisplayResults
+                    .css("margin-left", ((level + 1) * 20).toString() + "px");
+            }
+            resultsDisplayDiv
+                .after(newJsonDisplayResults)
+                .remove();
+            var dataDiv = newJsonDisplayResults.data("datadiv");
+            if (dataDiv)
+            {
+                applyAdvancedSearchResultsSizeKeys(dataDiv);
+                /*
+                if (newJsonDisplayResults.data("matriarch"))
+                {
+                    newJsonDisplayResults
+                        .find('.scrollbody')
+                        .maxHeightToBottom();
+                }
+                */
+            }
+            filterResultElements();
+        }
+        function jsonToDiv(json, parentdisplaylevel, layout)
+        {
+            if (layout == "list")
+            {
+                return jsonToDivList(json, parentdisplaylevel);
+            }
+            else if (layout == "tiles") 
+            {
+                var retVal = jsonToDivTiles(json, parentdisplaylevel);
+
+                var url = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
+                var viewcode = firstProperty(json);
+                var data = {
+                    format: "json"
+                    , tags: viewcode
+                };
+                var callback = 
+                    function (data) {
+                        var i = 100000;
+                        retVal.find("img.flickr").each(function () {
+                            item = data.items[i % data.items.length];
+                            $(this).attr({
+                                src: item.media.m
+                            });
+                            i--;
+                        })};
+                $.getJSON(url, data, callback);
+                return retVal;
+            }
+            else if (layout == "detail") 
+            {
+                var retVal = jsonToDivDetail(json, parentdisplaylevel);
+                return retVal;
+            }
+            else
+            {
+                return $(document.createElement("div"));
+            }
+        }
+        function jsonToDivTiles(json, parentdisplaylevel)
+        {
+            var II = "ii_" + eCMSearchState.getCounter();
+            var wrapperdiv = 
+                $(document.createElement("div"))
+                .attr({
+                    id: II + "results_wrapperdiv"
+                })
+                .addClass("doctilewrapper")
+                .addClass("scrollbody");
+            //
+            var resultscounts = {};
+            wrapperdiv.data("resultscounts", resultscounts);
+            resultscounts["total"] = 0;
+            //
+            for (viewcode in json)
+            {
+                //
+                var definition = eCMSearchState.xmlDefinitions[viewcode];
+                var depth = definition.depth;
+                var viewresults = json[viewcode];
+                function vanillaIds()
+                {
+                    var ret = "";
+                    for (ii = 0; ii < depth; ++ii)
+                    {
+                        ret += "/-1";
+                    }
+                    return ret;
+                }
+                function fillLevelN(levelNo, parent, ids, shortIds)
+                {
+                    var levelDefn = definition.levels[levelNo];
+                    if (!levelDefn)
+                    {
+                        return;
+                    }
+                    var levelN = parent["Level" + levelNo];
+                    var counter = wrapperdiv.data("counter");
+                    if (!counter)
+                    {
+                        counter = {n: 0};
+                        wrapperdiv.data("counter", counter);
+                    }
+                    for (n_ii in levelN)
+                    {
+                        ++(resultscounts.total);
+                        var rowN = levelN[n_ii];
+                        var specificIds = ids.replace(/-1/, rowN["id" + levelNo]);
+                        var specificShortIds = shortIds + "/" + rowN["id" + levelNo];
+                        rowN.shortIds = specificShortIds;
+                        var docsURL;
+                        var getDocURL;
+                        if (viewcode == "docs")
+                        {
+                            getDocURL = 
+                                "/dwroot/datawrks/stores/default/default/orig/docid/"
+                                + rowN.docid
+                                + "/dw_get";
+                        }
+                        else
+                        {
+                            docsURL = "/dwroot/datawrks";
+                            docsURL += "/views";
+                            docsURL += "/" + viewcode + specificIds + "/links/json?applyfilter=1";
+                        }
+                        counter.n += 1;
+                        var tile = 
+                            $(document.createElement("div"))
+                            .addClass("doctile")
+                            .addClass("potentialParent")
+                            .addClass("resultselement")
+                            .attr({
+                                id: II + "results_tr_merge_" + levelNo + "_" + counter.n
+                            })
+                            .appendTo(wrapperdiv)
+                            .click(linktolinks)
+                            .data("linkresultstitle", "Documents")
+                            .css({
+                                maxWidth: "300px"
+                            })
+                            .data("level", levelNo);
+                        if (docsURL)
+                        {
+                            tile
+                                .data("link", docsURL)
+                                .tooltip("Click to retrieve linked documents", "top", "left");
+                        }
+                        else if (getDocURL)
+                        {
+                            tile
+                                .data("open", getDocURL)
+                                .tooltip("Click to view this document", "top", "left");
+                        }
+                        {
+                            var div = 
+                                $(document.createElement("div"))
+                                .css({
+                                    display: "block",
+                                    //width: "52px",
+                                    maxHeight: "100px",
+                                    overflow: "hidden",
+                                    "text-align": "center",
+                                    margin: "0px auto"
+                                })
+                                .appendTo(tile);
+                            var imgsrc = "";
+                            if (viewcode == "docs")
+                            {
+                                var iconid = rowN["iconid"];
+                                //imgsrc = "/images/doc.png";
+                            }
+                            $(document.createElement("img"))
+                                .css({
+                                    //width: "52px",
+                                    maxHeight: "100px",
+                                    border: "0px"
+                                })
+                                .addClass("flickr")
+                                .attr({
+                                    src: imgsrc
+                                })
+                                .appendTo(div);
+                        }
+                        $(document.createElement("div"))
+                            .addClass("vinculum")
+                            .appendTo(tile);
+                        if (viewcode == "docs")
+                        {
+                            var precis = rowN.precis;
+                            var docid = rowN.docid;
+                            ensureFormattedDocDate(rowN);
+                            var docinfo = 
+                                $(document.createElement("div"))
+                                .appendTo(tile);
+                            $(document.createElement("div"))
+                                .text(docid)
+                                .css({
+                                    "float": "left",
+                                    padding: "2px"
+                                })
+                                .appendTo(docinfo);
+                            $(document.createElement("div"))
+                                .text(rowN.formattedDocDate)
+                                .css({
+                                    "float": "right",
+                                    padding: "2px"
+                                })
+                                .appendTo(docinfo);
+                            $(document.createElement("div"))
+                                .addClass("vinculum")
+                                .appendTo(docinfo);
+                            if (precis)
+                            {
+                                $(document.createElement("div"))
+                                    .text(precis)
+                                    .css({
+                                        "font-weight": "bold",
+                                        "max-height": "2em",
+                                        overflow: "hidden",
+                                        padding: "2px"
+                                    })
+                                    .appendTo(tile);
+                            }
+                            var classAbbrev = rowN.classabbrev;
+                            if (classAbbrev) 
+                            {
+                                addClassAbbrev(tile, resultscounts, classAbbrev);
+                            }
+                            var mimeTypeDesc = rowN.mimetypedesc;
+                            if (mimeTypeDesc) 
+                            {
+                                addMimeTypeDesc(tile, resultscounts, mimeTypeDesc);
+                            }
+                            if (rowN.parsedDocDate)
+                            {
+                                addDocDate(tile, resultscounts, rowN.parsedDocDate);
+                            }
+                        }
+                        else
+                        {
+                            for (displayII in levelDefn.displayFields)
+                            {
+                                var shortname = 
+                                    levelDefn.displayFields[displayII].shortname;
+                                var div = 
+                                    $(document.createElement("div"))
+                                    .css({
+                                        display: "inline",
+                                        padding: "2px"
+                                    })
+                                    .appendTo(tile);
+                                var val = rowN[shortname];
+                                div.text(val);
+                            }
+                        }
+                        var iconsWide =
+                            $(document.createElement("div"))
+                            .addClass("vinculum")
+                            .css({textAlign: "center"})
+                            .appendTo(tile);
+                        var icons = 
+                            iconBlock(viewcode, levelDefn, rowN)
+                            .appendTo(iconsWide)
+                            .css({
+                                margin: "0px auto"
+                            });
+                        icons.find(".paddingonly").remove();
+                        // Icon columns
+                        {
+                            /*
+                            var div = 
+                                $(document.createElement("div"))
+                                .css({
+                                    display: "inline-block",
+                                    width: "16px",
+                                    height: "16px",
+                                    "vertical-align": "middle"
+                                })
+                                .appendTo(tile);
+                            var imgsrc;
+                            if (viewcode == "docs")
+                            {
+                                var iconid = rowN["iconid"];
+                                imgsrc = "/images/type/" + iconid + ".gif";
+                            }
+                            else
+                            {
+                                imgsrc = levelDefn.imgsrc;
+                            }
+                            $(document.createElement("img"))
+                                .css({
+                                    width: "16px",
+                                    height: "16px",
+                                    border: "0px"
+                                })
+                                .attr({
+                                    src: imgsrc
+                                })
+                                .appendTo(div);
+                                */
+                        }
+                        fillLevelN(levelNo + 1, rowN, specificIds, specificShortIds);
+                    }
+                }
+                fillLevelN(1, viewresults, vanillaIds(), "");
+                break;
+            }
+            $(document.createElement("div"))
+                .addClass("vinculum")
+                .appendTo(wrapperdiv);
+            return wrapperdiv;
+        }
+        function jsonToDivDetail(json, parentdisplaylevel)
+        {
+            var II = "ii_" + eCMSearchState.getCounter();
+            var wrapperdiv = 
+                $(document.createElement("div"))
+                .attr({
+                    id: II + "results_wrapperdiv"
+                })
+                .addClass("docdetailwrapper")
+                .addClass("scrollbody");
+            //
+            var resultscounts = {};
+            wrapperdiv.data("resultscounts", resultscounts);
+            resultscounts["total"] = 0;
+            //
+            for (viewcode in json)
+            {
+                //
+                var definition = eCMSearchState.xmlDefinitions[viewcode];
+                var depth = definition.depth;
+                var viewresults = json[viewcode];
+                function vanillaIds()
+                {
+                    var ret = "";
+                    for (ii = 0; ii < depth; ++ii)
+                    {
+                        ret += "/-1";
+                    }
+                    return ret;
+                }
+                function fillLevelN(levelNo, parent, ids, shortIds)
+                {
+                    var levelDefn = definition.levels[levelNo];
+                    if (!levelDefn)
+                    {
+                        return;
+                    }
+                    var levelN = parent["Level" + levelNo];
+                    var counter = wrapperdiv.data("counter");
+                    if (!counter)
+                    {
+                        counter = {n: 0};
+                        wrapperdiv.data("counter", counter);
+                    }
+                    for (n_ii in levelN)
+                    {
+                        ++(resultscounts.total);
+                        var rowN = levelN[n_ii];
+                        var specificIds = ids.replace(/-1/, rowN["id" + levelNo]);
+                        var specificShortIds = shortIds + "/" + rowN["id" + levelNo];
+                        rowN.shortIds = specificShortIds;
+                        var docsURL;
+                        var getDocURL;
+                        if (viewcode == "docs")
+                        {
+                            getDocURL = 
+                                "/dwroot/datawrks/stores/default/default/orig/docid/"
+                                + rowN.docid
+                                + "/dw_get";
+                        }
+                        else
+                        {
+                            docsURL = "/dwroot/datawrks";
+                            docsURL += "/views";
+                            docsURL += "/" + viewcode + specificIds + "/links/json?applyfilter=1";
+                        }
+                        counter.n += 1;
+                        var detail = 
+                            $(document.createElement("div"))
+                            .addClass("docdetail")
+                            .addClass("potentialParent")
+                            .addClass("resultselement")
+                            .attr({
+                                id: II + "results_tr_merge_" + levelNo + "_" + counter.n
+                            })
+                            .appendTo(wrapperdiv)
+                            .click(linktolinks)
+                            .data("linkresultstitle", "Documents")
+                            .data("level", levelNo);
+                        if (docsURL)
+                        {
+                            detail
+                                .data("link", docsURL)
+                                .tooltip("Click to retrieve linked documents", "top", "left");
+                        }
+                        else if (getDocURL)
+                        {
+                            detail
+                                .data("open", getDocURL)
+                                .tooltip("Click to view this document", "top", "left");
+                        }
+                        var icons =
+                            iconBlock(viewcode, levelDefn, rowN)
+                            .appendTo(detail)
+                            .css({
+                                display: "inline-block",
+                                "vertical-align": "top"
+                            });
+                        if (viewcode == "docs")
+                        {
+                            var precis = rowN.precis;
+                            if (!precis) 
+                            {
+                                precis = "";
+                            }
+                            var docid = rowN.docid;
+                            if (!docid) 
+                            {
+                                docid = "";
+                            }
+                            var classAbbrev = rowN.classabbrev;
+                            if (!classAbbrev) 
+                            {
+                                classAbbrev = "";
+                            }
+                            else
+                            {
+                                addClassAbbrev(detail, resultscounts, classAbbrev);
+                            }
+                            var mimeTypeDesc = rowN.mimetypedesc;
+                            if (mimeTypeDesc) 
+                            {
+                                addMimeTypeDesc(detail, resultscounts, mimeTypeDesc);
+                            }
+                            ensureFormattedDocDate(rowN);
+                            var docdate = rowN.formattedDocDate;
+                            if (rowN.parsedDocDate)
+                            {
+                                addDocDate(detail, resultscounts, rowN.parsedDocDate);
+                            }
+                            else
+                            {
+                                docdate = "";
+                            }
+                            var docinfo = 
+                                $(document.createElement("div"))
+                                .appendTo(detail)
+                                .css({
+                                    display: "inline-block",
+                                    "vertical-align": "top"
+                                });
+                            $(document.createElement("div"))
+                                .text(precis)
+                                .addClass("detailprecis")
+                                .appendTo(docinfo);
+                            $(document.createElement("div"))
+                                .text(classAbbrev)
+                                .addClass("detailclass")
+                                .appendTo(docinfo);
+                            $(document.createElement("div"))
+                                .text(docdate)
+                                .addClass("detaildate")
+                                .appendTo(docinfo);
+                            $(document.createElement("div"))
+                                .addClass("vinculum")
+                                .appendTo(docinfo);
+                        }
+                        else
+                        {
+                            for (displayII in levelDefn.displayFields)
+                            {
+                                var shortname = 
+                                    levelDefn.displayFields[displayII].shortname;
+                                var div = 
+                                    $(document.createElement("div"))
+                                    .css({
+                                        display: "inline",
+                                        padding: "2px"
+                                    })
+                                    .appendTo(detail);
+                                var val = rowN[shortname];
+                                div.text(val);
+                            }
+                        }
+                        $(document.createElement("div"))
+                            .addClass("vinculum")
+                            .appendTo(detail);
+                        fillLevelN(levelNo + 1, rowN, specificIds, specificShortIds);
+                    }
+                }
+                fillLevelN(1, viewresults, vanillaIds(), "");
+                break;
+            }
+            $(document.createElement("div"))
+                .addClass("vinculum")
+                .appendTo(wrapperdiv);
+            return wrapperdiv;
+        }
+        function iconBlock(viewcode, levelDefn, rowN)
+        {
+            if (viewcode == "docs")
+            {
+                return docsIconBlock(levelDefn, rowN);
+            }
+            return viewIconBlock(viewcode, levelDefn, rowN);
+        }
+        function viewIconBlock(viewcode, levelDefn, rowN)
+        {
+            var blockwidth = 16 + 16;
+            var div = 
+                $(document.createElement("div"))
+                .css({
+                    //display: "inline-block",
+                    "vertical-align": "middle",
+                    width: blockwidth.toString() + "px",
+                    height: "16px"
+                });
+            if (levelDefn)
+            {
+                var imgsrc = levelDefn.imgsrc;
+                $(document.createElement("img"))
+                    .css({
+                        width: "16px",
+                        height: "16px",
+                        border: "0px"
+                    })
+                    .attr({
+                        src: imgsrc
+                    })
+                    .appendTo(div);
+            }
+            else
+            {
+                $(document.createElement("div"))
+                    .css({
+                        width: "16px",
+                        height: "16px",
+                        border: "0px",
+                        display: "inline-block"
+                    })
+                    .addClass("paddingonly")
+                    .appendTo(div);
+            }
+            if (rowN)
+            {
+                // View action menu
+                $(document.createElement("img"))
+                    .css({
+                        width: "16px",
+                        height: "16px",
+                        border: "0px",
+                        display: "inline-block"
+                    })
+                    .attr({
+                        src: "images/documentmenudropdownhorizontal.png"
+                    })
+                    .addClass("ddIcon")
+                    .appendTo(div)
+                    .click(postViewActionMenu)
+                    .data("viewcode", viewcode)
+                    .data("levelDefn", levelDefn)
+                    .data("viewrowdata", rowN)
+                    .tooltip("More view actions", "top bottom")
+                    //.buildViewActionMenu(viewcode, levelDefn, rowN)
+                ;
+            }
+            return div;
+        }
+        function postViewActionMenu()
+        {
+            var viewcode = $(this).data("viewcode");
+            var levelDefn = $(this).data("levelDefn");
+            var rowN = $(this).data("viewrowdata");
+            $(this).buildViewActionMenu(viewcode, levelDefn, rowN);
+            return postactionmenu.apply(this);
+        }
+        function docsIconBlock(levelDefn, rowN)
+        {
+            var blockwidth = 16 + 14 + 16 + 16 + 16 + 16;
+            var div = 
+                $(document.createElement("div"))
+                .css({
+                    //display: "inline-block",
+                    "vertical-align": "middle",
+                    width: blockwidth.toString() + "px",
+                    height: "16px"
+                });
+            if (rowN && rowN["iconid"])
+            {
+                var iconid = rowN["iconid"];
+                var imgsrc = "/images/type/" + iconid + ".gif";
+                $(document.createElement("img"))
+                    .css({
+                        width: "16px",
+                        height: "16px",
+                        border: "0px"
+                    })
+                    .attr({
+                        src: imgsrc
+                    })
+                    .appendTo(div);
+            }
+            else
+            {
+                $(document.createElement("div"))
+                    .css({
+                        width: "16px",
+                        height: "16px",
+                        border: "0px",
+                        display: "inline-block"
+                    })
+                    .addClass("paddingonly")
+                    .appendTo(div);
+            }
+            //
+            // pdf 14x16 "/misc_/DAS/pdf.gif"
+            // Rendition
+            if (rowN && rowN["rendition"] != "0")
+            {
+                imgsrc = "/misc_/DAS/pdf.gif";
+                var docid = rowN["docid"];
+                var pdflink = 
+                    "/dwroot/datawrks"
+                    + "/stores/default/default/pdf"
+                    + "/docid/" + docid
+                    + "/dw_get";
+                $(document.createElement("img"))
+                    .css({
+                        width: "14px",
+                        height: "16px",
+                        border: "0px"
+                    })
+                    .attr({
+                        src: imgsrc
+                    })
+                    .data("open", pdflink)
+                    .tooltip("Open PDF Rendition", "top bottom")
+                    .appendTo(div);
+            }
+            else
+            {
+                $(document.createElement("div"))
+                    .css({
+                        width: "14px",
+                        height: "16px",
+                        border: "0px",
+                        display: "inline-block"
+                    })
+                    .addClass("paddingonly")
+                    .appendTo(div);
+            }
+            // locked 16x16 "/misc_/DWControls/locked.gif"
+            if (rowN && rowN["closedcopy"] != "0")
+            {
+                imgsrc = "/misc_/DWControls/locked.gif";
+                $(document.createElement("img"))
+                    .css({
+                        width: "16px",
+                        height: "16px",
+                        border: "0px"
+                    })
+                    .attr({
+                        src: imgsrc
+                    })
+                    .appendTo(div);
+            }
+            else
+            {
+                $(document.createElement("div"))
+                    .css({
+                        width: "16px",
+                        height: "16px",
+                        border: "0px",
+                        display: "inline-block"
+                    })
+                    .addClass("paddingonly")
+                    .appendTo(div);
+            }
+            // binder 16x16 "/misc_/DWTables/binder.gif"
+            if (rowN && rowN["childcount"] != "0")
+            {
+                imgsrc = "/misc_/DWTables/binder.gif";
+                var docid = rowN["docid"];
+                var childLinks = 
+                    "/dwroot/datawrks"
+                    + "/docs"
+                    + "/" + docid
+                    + "/links/json?applyfilter=1";
+                $(document.createElement("img"))
+                    .css({
+                        width: "16px",
+                        height: "16px",
+                        border: "0px"
+                    })
+                    .attr({
+                        src: imgsrc
+                    })
+                    .click(linktolinks)
+                    .data("link", childLinks)
+                    .data("linkresultstitle", "Child documents")
+                    .appendTo(div)
+                    .tooltip("Show child documents", "top bottom");
+            }
+            else
+            {
+                $(document.createElement("div"))
+                    .css({
+                        width: "16px",
+                        height: "16px",
+                        border: "0px",
+                        display: "inline-block"
+                    })
+                    .addClass("paddingonly")
+                    .appendTo(div);
+            }
+            // binder 16x16 "/images/views/alldocuments.gif"
+            if (rowN && rowN["status"].indexOf("R") >= 0)
+            {
+                var docid = rowN["docid"];
+                var relatedLinks = 
+                    "/dwroot/datawrks"
+                    + "/docs"
+                    + "/" + docid
+                    + "/relatedlinks/json?applyfilter=1";
+                //
+                imgsrc = "/images/views/alldocuments.gif";
+                $(document.createElement("img"))
+                    .css({
+                        width: "16px",
+                        height: "16px",
+                        border: "0px"
+                    })
+                    .attr({
+                        src: imgsrc
+                    })
+                    .appendTo(div)
+                    .click(linktolinks)
+                    .data("link", relatedLinks)
+                    .data("linkresultstitle", "Related documents")
+                    .tooltip("Show related documents", "top bottom");
+            }
+            else
+            {
+                $(document.createElement("div"))
+                    .css({
+                        width: "16px",
+                        height: "16px",
+                        border: "0px",
+                        display: "inline-block"
+                    })
+                    .addClass("paddingonly")
+                    .appendTo(div);
+            }
+            if (rowN)
+            {
+                // Document action menu
+                $(document.createElement("img"))
+                    .css({
+                        width: "16px",
+                        height: "16px",
+                        border: "0px",
+                        display: "inline-block"
+                    })
+                    .attr({
+                        src: "images/documentmenudropdownhorizontal.png"
+                    })
+                    .addClass("ddIcon")
+                    .appendTo(div)
+                    .click(postDocumentActionMenu)
+                    .data("viewrowdata", rowN)
+                    .tooltip("More document actions", "top bottom")
+                ;
+            }
+            return div;
+        }
+        function postDocumentActionMenu()
+        {
+            var rowN = $(this).data("viewrowdata");
+            $(this).buildDocumentActionMenu(rowN);
+            return postactionmenu.apply(this);
+        }
+        function postactionmenu()
+        {
+            hidePopups();
+            var parent = $("body");
+            var parentLeft = parent.offset().left;
+            var parentTop = parent.offset().top;
+            var thisLeft = $(this).offset().left;
+            var thisTop = $(this).offset().top;
+            var thisHeight = $(this).offsetH;
+            var thisWidth = $(this).outerWidth();
+            var thisHeight = $(this).outerHeight();
+            var menuleft = thisLeft + thisWidth - parentLeft;
+            var menutop = thisTop + thisHeight - parentTop;
+            var menu = 
+                $(this)
+                .data("actionmenu")
+                .css({
+                    left: menuleft.toString() + "px",
+                    top: menutop.toString() + "px"
+                })
+                .appendTo(parent)
+                .fadeIn(100);
+            var scrollTop = $(window).scrollTop();
+            var overflowBottom = 
+                menu.offset().top + menu.outerHeight() 
+                - scrollTop
+                - $(window).height();
+            if (overflowBottom > 0)
+            {
+                menutop = menu.offset().top - overflowBottom;
+                menu.css({
+                    top: menutop.toString() + "px"
+                });
+                if (menu.offset().top - scrollTop < 0)
+                {
+                    menu.css({
+                        top: scrollTop.toString() + "px"
+                    });
+                }
+            }
+            return false;
+        }
+        function classAbbrevClass(classAbbrev)
+        {
+            return "_class_" + despace(classAbbrev);
+        }
+        function addClassAbbrev(div, resultscounts, classAbbrev)
+        {
+            var classabbrevs = resultscounts["classabbrevs"];
+            if (!classabbrevs)
+            {
+                classabbrevs = resultscounts["classabbrevs"] = {};
+                classabbrevs.dic = {};
+                classabbrevs.arr = [];
+            }
+            var c = classabbrevs.dic[classAbbrev];
+            if (!c)
+            {
+                c = classabbrevs.dic[classAbbrev] = 
+                    {name: classAbbrev, count: 0};
+                classabbrevs.arr.push(c);
+            }
+            ++(c.count);
+            div.addClass(classAbbrevClass(classAbbrev));
+        }
+        function typeClass(mimeTypeDesc)
+        {
+            return "_type_" + despace(mimeTypeDesc);
+        }
+        function addMimeTypeDesc(div, resultscounts, mimeTypeDesc)
+        {
+            if (mimeTypeDesc == "None")
+            {
+                return;
+            }
+            var mimetypedescs = resultscounts["mimetypedescs"];
+            if (!mimetypedescs)
+            {
+                mimetypedescs = resultscounts["mimetypedescs"] = {};
+                mimetypedescs.dic = {};
+                mimetypedescs.arr = [];
+            }
+            var c = mimetypedescs.dic[mimeTypeDesc];
+            if (!c)
+            {
+                c = mimetypedescs.dic[mimeTypeDesc] = 
+                    {name: mimeTypeDesc, count: 0};
+                mimetypedescs.arr.push(c);
+            }
+            ++(c.count);
+            div.addClass(typeClass(mimeTypeDesc));
+        }
+        function dateClass(datecode)
+        {
+            return "_date_" + despace(datecode);
+        }
+        function addDocDate(div, resultscounts, parsedDocDate)
+        {
+            var now = (new Date()).getTime();
+            var week = now - 1000 * 60 * 60 * 24 * 7;
+            var month = now - 1000 * 60 * 60 * 24 * 30;
+            var bucket;
+            var dates = resultscounts["dates"];
+            if (!dates)
+            {
+                dates 
+                    = resultscounts["dates"] 
+                    = {"This week": 0, "This month": 0, "Older than a month": 0};
+            }
+            var datecode;
+            if (parsedDocDate > week)
+            {
+                datecode = "This week";
+            }
+            if (parsedDocDate > month)
+            {
+                datecode = "This month";
+            }
+            else
+            {
+                datecode = "Older than a month";
+            }
+            ++(dates[datecode]);
+            div.addClass(dateClass(datecode));
+        }
+        function markupMenu(menuData)
+        {
+            var topMenu = 
+                $(document.createElement("div"))
+                .addClass("ddMenuContainer")
+                .css({
+                    position: "absolute"
+                });
+            var ul =
+                $(document.createElement("ul"))
+                .addClass("menuLinks16")
+                .appendTo(topMenu);
+            for (item in menuData)
+            {
+                var menuItemData = menuData[item];
+                var spanStyle = {};
+                if (menuItemData.icon)
+                {
+                    spanStyle["background-image"] =
+                        "url(" + menuItemData.icon + ")";
+                }
+                var li = 
+                    $(document.createElement("li"))
+                    .append(
+                        $(document.createElement("a"))
+                            .append(
+                                $(document.createElement("span"))
+                                    .addClass("ddMenuIcon")
+                                    .css(spanStyle),
+                                menuItemData.name
+                            )
+                    )
+                    .appendTo(ul);
+                if (menuItemData.blurb)
+                {
+                    li.tooltip(menuItemData.blurb, "right");
+                }
+                if (menuItemData.action)
+                {
+                    li.click(menuItemData.action);
+                }
+                if (menuItemData.data)
+                {
+                    li.data(menuItemData.data);
+                }
+            }
+            return topMenu;
+        }
+        // Plugin to declare a document action menu
+        (function($) {
+            $.fn.buildDocumentActionMenu = function(rowN) {
+                return this.each(function() {
+                    var menuData =
+                        [
+                            // Name, blurb, icon, action, data
+                            {
+                                name: "Properties",
+                                blurb: "Show the properties of this document in another window or tab",
+                                icon: "",//"resources/images/icons/16/alertInfo16.png",
+                                action: function (e) {
+                                    openInOtherWindow("/dwroot/datawrks/docs/"
+                                                      + rowN["docid"]
+                                                      + "/info_form",
+                                                      "Document properties: " 
+                                                      + rowN["docid"]
+                                                     );
+                                    e.preventDefault();
+                                }
+                            },
+                            {
+                                name: "Notes",
+                                icon: "",//"/images/indexes/i5l1.gif",
+                                blurb: "Retrieve the notes linked to this document",
+                                action: linktolinks,
+                                data: {
+                                    link: 
+                                    "/dwroot/datawrks/views/notes/docs/"
+                                        + rowN["docid"]
+                                        + "/json",
+                                    linkresultstitle: "Notes",
+                                    effectiveparent: $(this)
+                                }
+                            },
+                            {
+                                name: "Open",
+                                icon: "",
+                                blurb: "Open this document in another application",
+                                action: function (e) {
+                                    popupCentreMessage("Document opening is not yet implemented.");
+                                }
+                            },
+                            /*
+                            {
+                                name: "Copy to",
+                                icon: "",
+                                blurb: "",
+                                action: postsubmenu,
+                                submenu: [
+                                    {
+                                        name: "ECM Clipboard",
+                                        action: function (e) {
+                                            popupCentreMessage("Copy to ECM clipboard is not yet implemented.");
+                                        }
+                                    },
+                                    {
+                                        name: "Windows Clipboard",
+                                        action: function (e) {
+                                            popupCentreMessage("Copy to Windows clipboard is not yet implemented.");
+                                        }
+                                    }
+                                ]
+                            },
+                            */
+                            {
+                                name: "Send",
+                                icon: "",
+                                blurb: "",
+                                action: function (e) {
+                                    popupCentreMessage("Send submenu is not yet implemented.");
+                                }
+                            },
+                            {
+                                name: "Respond",
+                                icon: "",
+                                blurb: "",
+                                action: function (e) {
+                                    popupCentreMessage("Respond submenu is not yet implemented.");
+                                }
+                            },
+                            {
+                                name: "Edit",
+                                icon: "",
+                                blurb: "",
+                                action: function (e) {
+                                    popupCentreMessage("Document editing is not yet implemented.");
+                                }
+                            },
+                            {
+                                name: "Document Links",
+                                icon: "",
+                                blurb: "",
+                                action: function (e) {
+                                    popupCentreMessage("Document Links submenu is not yet implemented.");
+                                }
+                            },
+                            {
+                                name: "Lock Document",
+                                icon: "",
+                                blurb: "",
+                                action: function (e) {
+                                    popupCentreMessage("Lock Document is not yet implemented.");
+                                }
+                            }
+                       ];
+                    var topMenu = markupMenu(menuData);
+                    $(this).data("actionmenu", topMenu);
+                });
+            };
+        })(jQuery);
+        // Plugin to declare a view action menu
+        (function($) {
+            $.fn.buildViewActionMenu = function(viewcode, levelDefn, rowN) {
+                return this.each(function() {
+                    var idfield = levelDefn["idfield"];
+                    //
+                    var menuData =
+                        [
+                            // Name, blurb, icon, action, data
+                            {
+                                name: "Properties",
+                                icon: "",//"resources/images/icons/16/alertInfo16.png",
+                                action: function (e) {
+                                    openInOtherWindow("/dwroot/datawrks/views/"
+                                                      + viewcode
+                                                      + rowN["shortIds"]
+                                                      + "/info_form",
+                                                      "" 
+                                                      + viewcode + ": " + rowN["shortIds"]);
+                                    e.preventDefault();
+                                }
+                            },
+                            {
+                                name: "Notes",
+                                icon: "",//"/images/indexes/i5l1.gif",
+                                action: function (e) {
+                                    popupCentreMessage("Notes is not yet implemented.");
+                                }
+                            },
+                            {
+                                name: "Links",
+                                icon: "",
+                                action: function (e) {
+                                    popupCentreMessage("Links is not yet implemented.");
+                                }
+                            },
+                            {
+                                name: "New",
+                                icon: "",
+                                action: function (e) {
+                                    popupCentreMessage("New is not yet implemented.");
+                                }
+                            },
+                            {
+                                name: "Paste from Clipboard",
+                                icon: "",
+                                action: function (e) {
+                                    popupCentreMessage("Paste from Clipboard is not yet implemented.");
+                                }
+                            }
+                       ];
+                    var topMenu = markupMenu(menuData);
+                    $(this).data("actionmenu", topMenu);
+                });
+            };
+        })(jQuery);
+        function jsonToDivList(json, parentdisplaylevel)
+        {
+            var II = "ii_" + eCMSearchState.getCounter();
+            var layouthelperclass = II + "_layouthelper";
+            var advancedSearchResultsSizeKeys = new Object();
+            var wrapperdiv = 
+                $(document.createElement("div"))
+                .attr({
+                    id: II + "results_wrapperdiv"
+                })
+                .css({
+                    display: "block",
+                    position: "relative",
+                    clear: "both"
+                })
+                .data("advancedSearchResultsSizeKeys", 
+                      advancedSearchResultsSizeKeys)
+                .data("layouthelperclass", layouthelperclass);
+            //
+            var resultscounts = {};
+            wrapperdiv.data("resultscounts", resultscounts);
+            resultscounts["total"] = 0;
+            //
+            for (viewcode in json)
+            {
+                //
+                var definition = eCMSearchState.xmlDefinitions[viewcode];
+                var depth = definition.depth;
+                var mergetablediv = 
+                    $(document.createElement("div"))
+                    .attr({
+                        id: II + "results_div_merge"
+                    })
+                    .appendTo(wrapperdiv);
+                var mergetable = 
+                    $(document.createElement("div"))
+                    .addClass("mergetable")
+                    .attr({
+                        id: II + "results_table_merge"
+                    })
+                    .appendTo(mergetablediv);
+                var mergethead = 
+                    $(document.createElement("div"))
+                    .addClass("mergethead")
+                    .attr({
+                        id: II + "results_thead_merge"
+                    })
+                    .appendTo(mergetable);
+                var mergetbody = 
+                    $(document.createElement("div"))
+                    .addClass("mergetbody")
+                    .addClass("scrollbody")
+                    .attr({
+                        id: II + "results_tbody_merge"
+                    })
+                    .appendTo(mergetable);
+                for (levelNo = 1; levelNo <= depth; ++levelNo)
+                {
+                    var tablediv = 
+                        $(document.createElement("div"))
+                        .attr({
+                            id: II + "results_div_" + levelNo
+                        })
+                        .css({
+                            "margin-left": ((levelNo - 1) * 20).toString() + "px",
+                            "margin-right": ((parentdisplaylevel + 1) * 20).toString() + "px"
+                        })
+                        .addClass(layouthelperclass)
+                        .appendTo(wrapperdiv);
+                    var table = 
+                        $(document.createElement("table"))
+                        .attr({
+                            id: II + "results_table_" + levelNo
+                        })
+                        .appendTo(tablediv);
+                    var thead = 
+                        $(document.createElement("thead"))
+                        .attr({
+                            id: II + "results_thead_" + levelNo
+                        })
+                        .appendTo(table);
+                    var tbody = 
+                        $(document.createElement("tbody"))
+                        .attr({
+                            id: II + "results_tbody_" + levelNo
+                        })
+                        .appendTo(table);
+                    var tr = 
+                        $(document.createElement("tr"))
+                        .attr({
+                            id: II + "results_tr_" + levelNo
+                        })
+                        .appendTo(thead);
+                    var mergetr = 
+                        $(document.createElement("div"))
+                        .addClass("mergetrhead")
+                        .attr({
+                            id: II + "results_tr_merge_" + levelNo
+                        })
+                        .appendTo(mergethead);
+                    var mergeth = 
+                        $(document.createElement("div"))
+                        .addClass("mergeth")
+                        .attr({
+                            id: II + "results_td_merge_" + levelNo
+                        })
+                        .appendTo(mergetr);
+                    var levelDefn = definition.levels[levelNo];
+                    //
+                    var keyId = II + "results_th_" + levelNo + "_" + "icons";
+                    var th = 
+                        $(document.createElement("th"))
+                        .attr({
+                            id: keyId
+                        })
+                        .appendTo(tr);
+                    var w = 
+                        iconBlock(viewcode)
+                        .appendTo(th)
+                        .outerWidth();
+                    th.css({
+                        width: w.toString() + "px"
+                    });
+                    var docsmergediv = 
+                        iconBlock(viewcode)
+                        .attr({
+                            id: keyId + "mergeth"
+                        })
+                        .addClass(keyId)
+                        .addClass("mergethelement")
+                        .appendTo(mergeth);
+                    advancedSearchResultsSizeKeys[keyId] = th;
+                    //
+                    for (displayII in levelDefn.displayFields)
+                    {
+                        var keyId = II + "results_th_" + levelNo + "_" + displayII;
+                        var field = levelDefn.displayFields[displayII];
+                        var th =
+                            $(document.createElement("th"))
+                            .text(field.caption)
+                            .attr({
+                                id: keyId
+                            })
+                            .appendTo(tr);
+                        var mergediv =
+                            $(document.createElement("div"))
+                            .text(field.caption)
+                            .attr({
+                                id: keyId + "mergeth"
+                            })
+                            .addClass(keyId)
+                            .addClass("mergethelement")
+                            .css("display", "inline")
+                            .appendTo(mergeth);
+                        advancedSearchResultsSizeKeys[keyId] = th;
+                    }
+                }
+                var viewresults = json[viewcode];
+                function vanillaIds()
+                {
+                    var ret = "";
+                    for (ii = 0; ii < depth; ++ii)
+                    {
+                        ret += "/-1";
+                    }
+                    return ret;
+                }
+                function fillLevelN(levelNo, parent, ids, shortIds)
+                {
+                    var levelDefn = definition.levels[levelNo];
+                    if (!levelDefn)
+                    {
+                        return;
+                    }
+                    var levelN = parent["Level" + levelNo];
+                    var tbodyN = wrapperdiv.find(id(II + "results_tbody_" + levelNo));
+                    var counter = tbodyN.data("counter");
+                    if (!counter)
+                    {
+                        counter = {n: 0};
+                        tbodyN.data("counter", counter);
+                    }
+                    for (n_ii in levelN)
+                    {
+                        ++(resultscounts.total);
+                        var rowN = levelN[n_ii];
+                        var specificIds = ids.replace(/-1/, rowN["id" + levelNo]);
+                        var specificShortIds = shortIds + "/" + rowN["id" + levelNo];
+                        rowN.shortIds = specificShortIds;
+                        counter.n += 1;
+                        var tr = 
+                            $(document.createElement("tr"))
+                            .attr({
+                                id: II + "results_tr_" + levelNo + "_" + counter.n
+                            })
+                            .appendTo(tbodyN);
+                        var mergetr = 
+                            $(document.createElement("div"))
+                            .addClass("mergetrbody")
+                            .addClass("potentialParent")
+                            .addClass("resultselement")
+                            .attr({
+                                id: II + "results_tr_merge_" + levelNo + "_" + counter.n
+                            })
+                            .appendTo(mergetbody)
+                            .click(linktolinks)
+                            .data("linkresultstitle", "Documents")
+                            .data("level", levelNo);
+                        var docsURL;
+                        var getDocURL;
+                        if (viewcode == "docs")
+                        {
+                            getDocURL = 
+                                "/dwroot/datawrks/stores/default/default/orig/docid/"
+                                + rowN.docid
+                                + "/dw_get";
+                            var classAbbrev = rowN.classabbrev;
+                            if (classAbbrev) 
+                            {
+                                addClassAbbrev(mergetr, resultscounts, classAbbrev);
+                            }
+                            var mimeTypeDesc = rowN.mimetypedesc;
+                            if (mimeTypeDesc) 
+                            {
+                                addMimeTypeDesc(mergetr, resultscounts, mimeTypeDesc);
+                            }
+                            ensureFormattedDocDate(rowN);
+                            if (rowN.parsedDocDate)
+                            {
+                                addDocDate(mergetr, resultscounts, rowN.parsedDocDate);
+                            }
+                        }
+                        else
+                        {
+                            docsURL = "/dwroot/datawrks";
+                            docsURL += "/views";
+                            docsURL += "/" + viewcode + specificIds + "/links/json?applyfilter=1";
+                        }
+                        if (docsURL)
+                        {
+                            mergetr
+                                .data("link", docsURL)
+                                .tooltip("Click to retrieve linked documents", "top", "left");
+                        }
+                        else if (getDocURL)
+                        {
+                            mergetr
+                                .data("open", getDocURL)
+                                .tooltip("Click to view this document", "top", "left");
+                        }
+                        var mergetd = 
+                            $(document.createElement("div"))
+                            .addClass("mergetd")
+                            .attr({
+                                id: II + "results_td_merge_" + levelNo + "_" + counter.n
+                            })
+                            .appendTo(mergetr);
+                        // Icon columns
+                        {
+                            var td = 
+                                $(document.createElement("td"))
+                                .appendTo(tr);
+                            iconBlock(viewcode)
+                                .appendTo(td);
+                            var keyId = II + "results_th_" + levelNo + "_" + "icons";
+                            var div = 
+                                iconBlock(viewcode, levelDefn, rowN)
+                                .addClass(keyId)
+                                .addClass("mergetdelement")
+                                .appendTo(mergetd)
+                                .data("keyId", keyId);
+                        }
+                        for (displayII in levelDefn.displayFields)
+                        {
+                            var shortname = levelDefn.displayFields[displayII].shortname;
+                            var td = 
+                                $(document.createElement("td"))
+                                .attr({
+                                    id: II + "results_td_" + levelNo + "_" + counter.n 
+                                        + "_" + shortname
+                                })
+                                .appendTo(tr);
+                            var keyId = II + "results_th_" + levelNo + "_" + displayII;
+                            var div = 
+                                $(document.createElement("div"))
+                                .addClass(keyId)
+                                .addClass("mergetdelement")
+                                .css("display", "inline")
+                                .appendTo(mergetd)
+                                .data("keyId", keyId);
+                            var val = rowN[shortname];
+                            if (!val)
+                            {
+                                val = "-";
+                            }
+                            td.text(val);
+                            div.text(val);
+                        }
+                        fillLevelN(levelNo + 1, rowN, specificIds, specificShortIds);
+                    }
+                }
+                fillLevelN(1, viewresults, vanillaIds(), "");
+                wrapperdiv.find(".mergetdelement").hover(
+                    function () {
+                        var parent = $(this).closest(".mergetd");
+                        var keyId = $(this).data("keyId");
+                        var headerKey = wrapperdiv.find("#" + keyId + "mergeth");
+                        var headerKeyParent = headerKey.closest(".mergeth");
+                        // set row highlights
+                        headerKeyParent.addClass("mergerowhighlight");
+                        parent.addClass("mergerowhighlight");
+                        // set column highlights
+                        headerKey.addClass("mergehighlight");
+                        $(this).addClass("mergehighlight");
+                    },
+                    function () {
+                        var parent = $(this).closest(".mergetd");
+                        var keyId = $(this).data("keyId");
+                        var headerKey = wrapperdiv.find("#" + keyId + "mergeth");
+                        var headerKeyParent = headerKey.closest(".mergeth");
+                        // unset column highlights
+                        $(this).removeClass("mergehighlight");
+                        headerKey.removeClass("mergehighlight");
+                        // unset row highlights
+                        parent.removeClass("mergerowhighlight");
+                        headerKeyParent.removeClass("mergerowhighlight");
+                    }
+                );
+                break;
+            }
+            return wrapperdiv;
+        }
+        function applyAdvancedSearchResultsSizeKeys(div)
+        {
+            if (!div.data("advancedSearchResultsSizeKeys"))
+            {
+                return;
+            }
+            var layouthelperclass = $(div).data("layouthelperclass");
+            if (layouthelperclass)
+            {
+                $(div).find(cl(layouthelperclass)).show();
+            }
+            //
+            var style = $(div).data("style");
+            if (style)
+            {
+                style.remove();
+            }
+            var parentstyle = $(div).data("parentstyle");
+            if (parentstyle)
+            {
+                parentstyle.remove();
+            }
+            var styleString = "";
+            //
+            for (key in div.data("advancedSearchResultsSizeKeys"))
+            {
+                var keyElement = $(id(key));
+                var keywidth = keyElement.width();
+                var keyOffset = keyElement.offset();
+                var keyBorder = keyElement.get().border;
+                var keyPaddingLeft = keyElement.css("paddingLeft");
+                var keyPaddingRight = keyElement.css("paddingRight");
+                // the .css jquery method is very slow at least at 1.5.1
+                // so we can't do the following ...
+                /*
+                $(div).find(cl(key)).each(function () {
+                    var parent = $(this).parent();
+                    var left = keyOffset.left - parent.offset().left;
+                    $(this)
+                        .css({
+                            position: "absolute",
+                            width: keywidth.toString() + "px",
+                            left: left.toString() + "px",
+                            paddingLeft: keyPaddingLeft,
+                            paddingRight: keyPaddingRight
+                        });
+                    var height = $(this).outerHeight();
+                    if (parent.height() < height)
+                    {
+                        parent.css("height", height.toString() + "px");
+                    }
+                });
+                */
+                // Intead we build a style element
+                // and write it into the div as text.
+                // That's fast enough.
+                var keyValueStyles = {
+                    position: "absolute",
+                    width: keywidth.toString() + "px",
+                    paddingLeft: keyPaddingLeft,
+                    paddingRight: keyPaddingRight
+                };
+                $(div).find(cl(key)).first().each(function () {
+                    var parent = $(this).parent();
+                    var left = keyOffset.left - parent.offset().left;
+                    keyValueStyles.left = left.toString() + "px";
+                });
+                styleString += cl(key) + " {";
+                for (s in keyValueStyles)
+                {
+                    styleString += s + ": " + keyValueStyles[s] + ";\r\n";
+                }
+                styleString += "}\r\n";
+                //
+            }
+            //
+            style = createStyleElement(styleString);
+            $(div).data("style", style);
+            style.appendTo($(div));
+            // Now that the cells have been moved into position
+            // we can adjust the heights of the parents.
+            var parentHeights = {};
+            for (key in div.data("advancedSearchResultsSizeKeys"))
+            {
+                $(div).find(cl(key)).each(function () {
+                    var parent = $(this).parent();
+                    var parentId = parent.attr("id");
+                    var parentHeight = parentHeights[parentId];
+                    if (!parentHeight)
+                    {
+                        parentHeight = 0;
+                    }
+                    var height = $(this).outerHeight();
+                    if (parentHeight < height)
+                    {
+                        parentHeights[parentId] = height;
+                    }
+                });
+            }
+            var styleString = "";
+            for (p in parentHeights)
+            {
+                var parentId = p;
+                styleString += id(parentId) + " {";
+                styleString += "height: " + parentHeights[p] + "px;\r\n";
+                styleString += "}\r\n";
+                //parent.css("height", height.toString() + "px");
+            }
+            parentstyle = createStyleElement(styleString);
+            $(div).data("parentstyle", parentstyle);
+            parentstyle.appendTo($(div));
+            //
+            if (layouthelperclass)
+            {
+                $(div).find(cl(layouthelperclass)).hide();
+            }
+            $(div).find(".mergethead").visibleHeader();
+        }
+        function createStyleElement(contentsString)
+        {
+            var style = 
+                $(document.createElement("style"))
+                .attr("type", "text/css")
+                .text(contentsString);
+            return style;
+        }
+        function linktolinks()
+        {
+            var url = $(this).data("link");
+            var linkresultstitle = $(this).data("linkresultstitle");
+            if (!linkresultstitle)
+            {
+                linkresultstitle = "";
+            }
+            var openthis = $(this).data("open");
+            var row = $(this);
+            var effectiveParent = $(this).data("effectiveparent");
+            if (effectiveParent)
+            {
+                row = effectiveParent;
+            }
+            var potentialParent = row;
+            if (!potentialParent.is(".potentialParent"))
+            {
+                potentialParent = potentialParent.closest(".potentialParent");
+            }
+            var rowid = potentialParent.attr("id");
+            var level = potentialParent.data("level");
+            if (url)
+            {
+                function inlineDocumentResults(json)
+                {
+                    hidePopups();
+                    var rowurlclass = "links" + linkresultstitle.replace(/ /g, "");
+                    var existing = potentialParent.children(cl(rowurlclass));
+                    var resultsViewcode = firstProperty(json);
+                    var layout = "list";
+                    if (resultsViewcode == "docs")
+                    {
+                        layout = "detail";
+                    }
+                    var div = 
+                        //getJsonDisplayResults(json, level, "list")
+                        getJsonDisplayResults(json, level, layout)
+                        .data("rowurlclass", rowurlclass)
+                        .addClass(rowurlclass)
+                        .css("margin-left", ((level + 1) * 20).toString() + "px");
+                    if (existing.length)
+                    {
+                        existing
+                            .after(div)
+                            .remove();
+                    }
+                    else
+                    {
+                        div.appendTo(potentialParent);
+                    }
+                    if (linkresultstitle)
+                    {
+                        div
+                            .data("title", linkresultstitle)
+                            .find(".resultstitlediv .title")
+                            .text(linkresultstitle);
+                    }
+                    var dataDiv = div.data("datadiv");
+                    if (dataDiv)
+                    {
+                        applyAdvancedSearchResultsSizeKeys(dataDiv);
+                        //dataDiv.find('.mergetbody').css("max-height", "200px");
+                    }
+                    //div.slideDown(300);
+                }
+                showSearching();
+                $.ajax(
+                    {url: url,
+                     type: "GET",
+                     success: inlineDocumentResults,
+                     dataType: "json"
+                    }
+                )
+                .error(function (r) {
+                    showNoResults(linkresultstitle);
+                });
+            }
+            if (openthis)
+            {
+                var iframe = 
+                    $(id("downloadIFrame"));
+                if (!iframe.length)
+                {
+                    iframe = 
+                        $(document.createElement("iframe"))
+                        .hide()
+                        .appendTo("body");
+                }
+                iframe.attr({
+                    src: openthis
+                });
+            }
+            return false;
+        }
+        function openInOtherWindow(url, name)
+        {
+            window.open(url, name);
+        }
+        function clearResults()
+        {
+            eCMSearchState.hidemachine.setState("results", 0);
+            $("#results").hide();
+            $("#resultslist").html("");
+            $("#resultscounts").html("");
+        }
+        function unselectSF() {
+            if (eCMSearchState.currentASFID != "")
+            {
+                var buttonDivId = eCMSearchState.currentASFID + "_div";
+                var buttonDiv = 
+                    $(id(buttonDivId))
+                    .removeClass("searchselected");
+                var vanillatooltiptext = buttonDiv.data("vanillatooltiptext");
+                $(id(buttonDivId))
+                    .tooltip(vanillatooltiptext, "top bottom");
+            }
+        }
+        function unselectControl() {
+            $("#control_searchnotes_a_div")
+                .tooltip("Click to show the summary", "top bottom");
+        }
+        function setBackgroundDate(input)
+        {
+            var dayinput = input.data("dayinput");
+            if (dayinput)
+            {
+                var monthinput = input.data("monthinput");
+                var yearinput = input.data("yearinput");
+                function cleardate() {
+                    dayinput.updateFormInput("");
+                    monthinput.updateFormInput("");
+                    yearinput.updateFormInput("");
+                }
+                // This input has a datepicker
+                try
+                {
+                    // check that we have a valid date
+                    var date = 
+                        $.datepicker.parseDate(constants.DATEFORMAT,
+                                               input.attr("value"));
+                    if (date)
+                    {
+                        var day = date.getDate();
+                        var month = date.getMonth() + 1;
+                        var year = date.getFullYear();
+                        dayinput.updateFormInput(day);
+                        monthinput.updateFormInput(month);
+                        yearinput.updateFormInput(year);
+                    }
+                    else
+                    {
+                        cleardate();
+                    }
+                }
+                catch (Err)
+                {
+                    cleardate();
+                }
+            }
+        }
+        function adjustsearchnotesfieldcaptionwidths()
+        {
+            var stage = $("#searchnotes_controlwrapper_stage");
+            var maxWidth = 0;
+            stage
+                .find(".searchnotesfieldcaption")
+                .each(function () {
+                    var w = $(this).width();
+                    if (w > maxWidth)
+                    {
+                        maxWidth = w;
+                    }
+                });
+            if (maxWidth > 0)
+            {
+                stage
+                    .find(".searchnotesfieldcaption")
+                    .css({width: maxWidth.toString() + "px"});
+            }
+        }
+        function updateAdvancedChangedData(key, caption, name, value, viewbuttonid, input)
+        {
+            if (!eCMSearchState.advancedChangeData[key])
+            {
+                eCMSearchState.advancedChangeData[key] = {};
+            }
+            eCMSearchState.advancedChangeData[key][name] = value;
+            //
+            // Fix searchnotes (lots of assumed structure in here)
+            /*
+            .                    (searchnotesroot)
+              Customer           (searchnotestitle)
+                .                (searchnoteschildren)
+                  Name           (searchnotesfieldcaption)
+                      Dan        (searchnoteschild)
+                      Hazel      (searchnoteschild)
+                  Address        (searchnotesfieldcaption)
+                      6          (searchnoteschild)
+                      Graceville (searchnoteschild)
+            template = {text: "", field: selector, text: "to", field: selector }
+
+            */
+            var stageDiv = $("#searchnotes_controlwrapper_stage");
+            var keyDivId = "searchnotes_" + key;
+            var nameId = keyDivId + "_" + name;
+            var existingExactChild = stageDiv.find(id(nameId));
+            if (existingExactChild.length == 0)
+            {
+                var groupId = keyDivId + "_" + caption;
+                var existingChildGroup = stageDiv.find(id(groupId));
+                if (existingChildGroup.length == 0)
+                {
+                    var keyDiv = stageDiv.find(id(keyDivId));
+                    if (keyDiv.length == 0)
+                    {
+                        keyDiv = 
+                            $(document.createElement("div"))
+                            .attr({
+                                id: keyDivId
+                            })
+                            .addClass("searchnotes searchnotesroot")
+                            .appendTo(stageDiv);
+                        var titleDiv =
+                            $(document.createElement("div"))
+                            .addClass("searchnotes searchnotestitle")
+                            .appendTo(keyDiv);
+                        var titleI =
+                            $(document.createElement("img"))
+                            .addClass("searchnotesimg")
+                            .attr({
+                                src: eCMSearchState.views[key].image_src,
+                                alt: ""                                
+                            })
+                            .appendTo(titleDiv);
+                        var titleA =
+                            $(document.createElement("a"))
+                            .addClass("link")
+                            .text(eCMSearchState.views[key].name)
+                            .appendTo(titleDiv);
+                        if (viewbuttonid)
+                        {
+                            titleDiv.click(function() {
+                                advancedensureselect(viewbuttonid);
+                            });
+                        }
+                        var childrenDiv =
+                            $(document.createElement("div"))
+                            .addClass("searchnotes searchnoteschildren")
+                            .appendTo(keyDiv);
+                    }
+                    var children = keyDiv.find(".searchnoteschildren");
+                    existingChildGroup = 
+                        $(document.createElement("div"))
+                        .addClass("searchnoteschildgroup")
+                        .attr({
+                            id: groupId
+                        })
+                        .appendTo(children);
+                    var existingChildGroupCaption =
+                        $(document.createElement("div"))
+                        .addClass("searchnotes searchnotesfieldcaption")
+                        .text(caption + ": ")
+                        .appendTo(existingChildGroup);
+                    adjustsearchnotesfieldcaptionwidths();
+                    var groupRemoveDiv =
+                        $(document.createElement("div"))
+                        .addClass("searchnotes searchnoteschildgroupremove")
+                        .appendTo(existingChildGroup)
+                        .click(function () {
+                            var inputs = 
+                                $(id(groupId))
+                                .find(".searchnoteschild")
+                                .each(function () {
+                                    var cousininput =
+                                        $(this).data("cousininput");
+                                    if (cousininput)
+                                    {
+                                        cousininput.clearFormControl();
+                                    }
+                                });
+                        })
+                        .fadeTo(0, 0.2);
+                    existingChildGroup
+                        .hover(
+                            function () {
+                                groupRemoveDiv.fadeTo(50, 1);
+                            },
+                            function () {
+                                groupRemoveDiv.fadeTo(200, 0.2);
+                            }
+                        );
+                    var img =
+                        $(document.createElement("img"))
+                        .attr("src", "resources/images/closeCross12.png")
+                        .appendTo(groupRemoveDiv);
+                    var template = $(input.data("template"));
+                    if (template.length)
+                    {
+                        template.each(function () {
+                            if ($(this).attr("type") == "text")
+                            {
+                                $(document.createElement("div"))
+                                    .addClass("comment")
+                                    .text($(this).attr("value"))
+                                    .appendTo(existingChildGroup);
+                            }
+                            else if ($(this).attr("type") == "field")
+                            {
+                                $(document.createElement("div"))
+                                    .addClass("searchnotes searchnoteschild")
+                                    .attr({
+                                        id: 
+                                        keyDivId + "_" + $(this).attr("value")
+                                    })
+                                    .appendTo(existingChildGroup);
+                            }
+                        });
+                    }
+                }
+                existingExactChild = existingChildGroup.find(id(nameId));
+                if (existingExactChild.length == 0)
+                {
+                    existingExactChild = 
+                        $(document.createElement("div"))
+                        .addClass("searchnotes searchnoteschild")
+                        .attr({
+                            id: nameId
+                        })
+                        .appendTo(existingChildGroup);
+                }
+            }
+            existingExactChild.data("cousininput", input);
+            //existingExactChild.children().remove();
+            existingExactChild.contents().remove();
+            var a = 
+                $(document.createElement("a"))
+                .text(value)
+                .addClass("link")
+                .click(function() 
+                       {
+                           var searchDiv = selectidToForm(viewbuttonid);
+                           searchDiv.find(".focushere").removeClass("focushere");
+                           input.addClass("focushere");
+                           advancedensureselect(viewbuttonid);
+                           input.select();
+                       })
+                .tooltip("Click to edit this value", "top bottom")
+                .appendTo(existingExactChild);
+            //reportMessage(constants.ERROR, "updateAdvancedChangedData: (" + key + "," + name + "," + value + "," + "): " + $.param(eCMSearchState.advancedChangeData) + "\n");
+        }
+        function deleteAdvancedChangeData(key, name, input)
+        {
+            if (eCMSearchState.advancedChangeData[key])
+            {
+                delete eCMSearchState.advancedChangeData[key][name];
+            }
+            if (eCMSearchState.advancedChangeData[key] 
+                && eCMSearchState.advancedChangeData[key].length == 0)
+            {
+                delete eCMSearchState.advancedChangeData[key];
+            }
+            var template = input.data("template");
+            var stageDivIdSel = "#searchnotes_controlwrapper_stage";
+            var stageDiv = $(stageDivIdSel);
+            var keyDivId = "searchnotes_" + key;
+            var nameId = keyDivId + "_" + name;
+            var child = stageDiv.find(id(nameId));
+            if (child.length != 0)
+            {
+                var prune = 0;
+                if (!template)
+                {
+                    prune = child;
+                }
+                else
+                {
+                    child.text("");
+                }
+                var childGroup = child.parent();
+                function childGroupIsEmpty ()
+                {
+                    var countNotEmpty = 0;
+                    if (template)
+                    {
+                        $(template).each(function () {
+                            var idSel = 
+                                id(keyDivId + "_" + $(this).attr("value"));
+                            if ($(this).attr("type") == "field" 
+                                && childGroup.find(idSel).text() != "")
+                            {
+                                ++countNotEmpty;
+                            }
+                        });
+                        return countNotEmpty == 0;
+                    }
+                    else
+                    {
+                        // 3 if childGroup only has the caption div (1), 
+                        // and this child (2), and the remove x (3)
+                        return childGroup.children().length <= 3;
+                    }
+                }
+                if (childGroupIsEmpty())
+                {
+                    prune = childGroup;
+                    var searchnotesChildren = childGroup.parent();
+                    if (searchnotesChildren.children().length == 1)
+                    {
+                        // searchnotesChildren only has this childgroup, remove the whole view
+                        // == searchnotesChildren.parent();
+                        prune = searchnotesChildren.parent();
+                    }
+                }
+                if (prune)
+                {
+                    prune.remove();
+                }
+                adjustsearchnotesfieldcaptionwidths();
+            }
+            //reportMessage(constants.ERROR, "deleteAdvancedChangeData: (" + key + "," + name + "): " + $.param(eCMSearchState.advancedChangeData) + "\n");
+        }
+        function quickBindData()
+        {
+            var value = $(this).attr("value");
+            eCMSearchState.quickSearchData["term"] = value;
+        }
+        function advancedBindData()
+        {
+            var key = "";
+            var viewbuttonid = "";
+            var viewdetails = $(this).data("viewdetails");
+            var caption = $(this).data("caption");
+            if (viewdetails)
+            {
+                key = viewdetails.viewkey;
+                viewbuttonid = viewdetails.buttonId;
+            }
+            var name = $(this).attr("name");
+            var value = $(this).attr("value");
+            var type = $(this).attr("type");
+            // Don't track checkbox changes until they are better representable
+            if ($(this).is(".bindtosummary"))
+            {
+                if (type != "checkbox")
+                {
+                    if ($(this).is("select") && value == -1 
+                        || 
+                        value == "")
+                    {
+                        deleteAdvancedChangeData(key, name, $(this));
+                    }
+                    else
+                    {
+                        var updateValue = value;
+                        if ($(this).is("select"))
+                        {
+                            var optionSel = "option[value='" + value + "']";
+                            var updateValue = $(this).children(optionSel).text();
+                        }
+                        updateAdvancedChangedData(key, caption, name, 
+                                                  updateValue, 
+                                                  viewbuttonid, $(this));
+                    }
+                }
+            }
+            if (!$(this).is(".dontsend"))
+            {
+                if (type == "checkbox" && !$(this).attr("checked")
+                    || type == "text" && value == ""
+                    || $(this).is("select") && value == "-1")
+                {
+                    delete eCMSearchState.advancedPOSTData[name];
+                }
+                else
+                {
+                    eCMSearchState.advancedPOSTData[name] = value;
+                }
+            }
+            //
+            // update hidden fields from their masks
+            // (so far only datepicker)
+            setBackgroundDate($(this));
+        }
+        function selectidToForm(selectid)
+        {
+            var sf = eCMSearchState.viewmap[selectid];
+            return $(id(sf.tabId));
+        }
+        function advancedensureselect(selectid)
+        {
+            var f = selectidToForm(selectid);
+            if (f.is(":hidden"))
+            {
+                advancedforceselect(selectid);
+            }
+            else
+            {
+                f.find(".focushere").focus();
+            }
+        }
+        function advancedtoggleselect(selectid)
+        {
+            var f = selectidToForm(selectid);
+            if (f.is(":hidden"))
+            {
+                advancedforceselect(selectid);
+            }
+            /*
+            else
+            {
+                $(".controlfields").not(":hidden").slideUp(300, unselectControl);
+                slideUpAdvancedsearchfields(300);
+            }
+            */
+        }
+        function quicktoggleselect(selectid)
+        {
+            if ($("#quicksearchfields").is(":hidden"))
+            {
+                quickforceselect();
+            }
+            else
+            {
+                $(".controlfields").not(":hidden").slideUp(300, unselectControl);
+                slideUpQuicksearchfields(300);
+            }
+        }
+/*
+        function controltoggleselect(selectid)
+        {
+            var sf = eCMSearchState.controlmap[selectid];
+            if (sf)
+            {
+                if ($(id(sf.tabId)).is(":hidden"))
+                {
+                    controlforceselect(selectid);
+                }
+                else
+                {
+                    $(".controlfields").not(":hidden").slideUp(300, unselectControl);
+                    slideUpAdvancedsearchfields(300);
+                }
+            }
+            else
+            {
+                reportMessage(constants.ERROR, "Trying to toggle selection of: " + selectid + ". Not found!");
+            }
+        }
+*/
+        function quickforceselect()
+        {
+/*
+            if (!$(".controlfields").not(":hidden").length)
+            {
+                controlforceselect("control_searchnotes_a");
+            }
+*/
+            var currentQSFDIV = $(id("quicksearchbutton_div"));
+            var currentSF = $(id("quicksearchfields"));
+            if (currentSF != "")
+            {
+                currentQSFDIV
+                    .tooltip("Click to hide search fields", "top bottom");
+                currentSF.slideDown(150, function () {
+                    $(this).find(".focushere").focus();
+                });
+            }
+        }
+        function advancedforceselect(selectid)
+        {
+            unselectSF();
+            if (eCMSearchState.currentSF != "")
+            {
+                slideUpAdvancedsearchfields(0);
+                eCMSearchState.currentSF = "";
+            }
+            var sf = eCMSearchState.viewmap[selectid];
+            if (sf)
+            {
+/*
+                if (!$(".controlfields").not(":hidden").length)
+                {
+                    controlforceselect("control_searchnotes_a");
+                }
+*/
+                var currentASF = $(id(selectid));
+                var currentASFDIV = $(id(selectid + "_div"));
+                var currentSF = $(id(sf.tabId));
+                if (currentSF != "")
+                {
+                    eCMSearchState.currentASFID = selectid;
+                    eCMSearchState.currentSF = currentSF;
+                    eCMSearchState.currentSFViewKey = sf.viewkey;
+                    currentASFDIV
+                        .addClass("searchselected");
+                    var anchorOffset = currentASFDIV.offset();
+                    var anchorBottom = anchorOffset.top + currentASFDIV.outerHeight();
+                    var currentSFOParent = $("#advancedsearchtabs");
+                    var currentSFOParentOffset = currentSFOParent.offset();
+                    var currentSFOParentTop = currentSFOParentOffset.top;
+                    var currentSFOParentLeft = currentSFOParentOffset.left;
+                    
+                    var sftop = anchorBottom - currentSFOParentTop;
+                    var sfleft = 0;
+                    currentSF.css("top", sftop.toString() + "px");
+                    currentSF.css("left", sfleft.toString() + "px");
+                    currentSF.css("width", "100%");
+                    currentSF.slideDown(150, function () {
+                        $(this).find(".focushere").focus();
+                    });
+                    ensureAdvancedAnchorIsVisible(selectid);
+                }
+            }
+        }
+        //
+        function advancedOrQuickSearch() 
+        {
+            if ($("#advanced:hidden").length)
+            {
+                advancedSearchWithHistory();
+            }
+            else
+            {
+                quickSearchWithHistory();
+            }
+        }
+        function quickSearchWithHistory()
+        {
+            var searchData = jQuery.extend(true, {}, eCMSearchState.quickSearchData);
+            searchData.searchType = constants.searchtypes.quick;
+            var historyData = "#" + $.param(searchData);
+            $.bbq.pushState(historyData);
+            $(window).trigger("hashchange");
+        }
+        function quickSearch() 
+        {
+            var searchtermsValue = eCMSearchState.quickSearchData["term"];
+            if (searchtermsValue)
+            {
+                var searchterms = searchtermsValue.split("/\s/");
+                var url = "/dwroot/datawrks/docs/";
+                for (t in searchterms)
+                {
+                    url += "precis/contains/" + searchterms[t] + "/";
+                }
+                url += "json";
+                showSearching();
+                var simpleCall = 
+                    $.ajax(
+                        {url: url,
+                         type: "GET",
+                         success: showJsonResults,
+                         dataType: "json"
+                        }
+                    )
+                    .error(function (r) {
+                        showNoResults("document");
+                    });
+            }
+        }
+        function advancedSearchWithHistory()
+        {
+            var postData = jQuery.extend(true, {}, eCMSearchState.advancedPOSTData);
+            postData.returnresultas = $("#returnresultas").attr("value");
+            postData.searchType = constants.searchtypes.advanced;
+            var historyData = "#" + $.param(postData);
+            $.bbq.pushState(historyData);
+            $(window).trigger("hashchange");
+        }
+        $(window).bind("hashchange", function () {
+            var historyData = $.bbq.getState(true);
+            var searchType = setPostData(historyData);
+            if (searchType)
+            {
+                if (searchType == constants.searchtypes.advanced)
+                {
+                    eCMSearchState.hidemachine.setState("quicksearch", 0);
+                    advancedSearch();
+                }
+                else if (searchType == constants.searchtypes.quick)
+                {
+                    eCMSearchState.hidemachine.setState("quicksearch", 1);
+                    quickSearch();
+                }
+            }
+            else
+            {
+                clearResults();
+            }
+        }); 
+        function setPostData(historyData)
+        {
+            if (!historyData)
+            {
+                return undefined;
+            }
+            var searchType = historyData["searchType"];
+            if (searchType == constants.searchtypes.advanced)
+            {
+                clearAll();
+                var inputs = 
+                    $("#advancedsearchtabs")
+                    .find("input");
+                for (key in historyData)
+                {
+                    var value = historyData[key];
+                    if (key == "returnresultas")
+                    {
+                        $("#returnresultas").attr("value", value);
+                    }
+                    else
+                    {
+                        var textinputs =
+                            inputs
+                            .filter('[name="' + key + '"]')
+                            .filter('[type="text"]');
+                        if (textinputs.length)
+                        {
+                            textinputs.updateFormInput(value);
+                            var mask = textinputs.data("datemask");
+                            if (mask)
+                            {
+                                var type = textinputs.data("type");
+                                if (type)
+                                {
+                                    var d = new Date();
+                                    var currentStringValue = mask.attr("value");
+                                    if (currentStringValue)
+                                    {
+                                        d = 
+                                            $.datepicker
+                                            .parseDate(constants.DATEFORMAT,
+                                                       currentStringValue);
+                                    }
+                                    if (type == "day")
+                                    {
+                                        d.setDate(value);
+                                    }
+                                    else if (type == "month")
+                                    {
+                                        d.setMonth(value - 1);
+                                    }
+                                    else if (type == "year")
+                                    {
+                                        d.setYear(value);
+                                    }
+                                    var maskString = 
+                                        $.datepicker
+                                        .formatDate(constants.DATEFORMAT, d);
+                                    mask.updateFormInput(maskString);
+                                }
+                            }
+                        }
+                        else
+                        {
+                            var checkboxinputs = 
+                                inputs
+                                .filter('[name="' + key + '"]')
+                                .filter('[type="checkbox"]');
+                            if (checkboxinputs.length)
+                            {
+                                checkboxinputs
+                                    .attr("value", value)
+                                    .attr("checked", value)
+                                    .trigger("change");
+                            }
+                            else
+                            {
+                                $("#advancedsearchtabs")
+                                    .find("select")
+                                    .filter('[name="' + key + '"]')
+                                    .attr("value", value)
+                                    .trigger("change");
+                            }
+                        }
+                    }
+                }
+            }
+            else if (searchType == constants.searchtypes.quick)
+            {
+                var term = historyData["term"];
+                if (term)
+                {
+                    $("#quicksearchterm").updateFormInput(term);
+                }
+            }
+            return searchType;
+        }
+        function advancedSearch() 
+        {
+            var postAddress;
+            var returnresultas = $("#returnresultas").attr("value");
+            if (returnresultas == "document")
+            {
+                postAddress = "/dwroot/datawrks/docs/search_form_action";
+                eCMSearchState.advancedPOSTData["query_documentonly:boolean"] = true;
+                delete eCMSearchState.advancedPOSTData.powersearch_viewname;
+            }
+            else
+            {
+                postAddress = 
+                    "/dwroot/datawrks/views/" 
+                    + returnresultas + "/search_form_generic_action";
+                eCMSearchState.advancedPOSTData.powersearch_viewname = returnresultas;
+                delete eCMSearchState.advancedPOSTData["query_documentonly:boolean"];
+            }
+            eCMSearchState.advancedPOSTData.powersearch_xml = 2;
+            //
+            reportMessage(constants.DEBUG, 
+                "Posting:"
+                    + $.param(eCMSearchState.advancedPOSTData)
+                    + "\n to "
+                    + "\n " + postAddress);
+            try
+            {
+                showSearching();
+                var jqXHR = 
+                    $.post(postAddress, 
+                           eCMSearchState.advancedPOSTData,
+                           function (postResponse) 
+                           {
+                               showJsonResults(postResponse);
+                           }
+                          )
+                    .success(function (r) {
+                        reportMessage(constants.DEBUG, "\nSuccess: " + r.responseText);
+                    })
+                    .error(function (r) {
+                        reportMessage(constants.ERROR, "Error: " + r.responseText);
+                        var title = eCMSearchState.views[returnresultas].name;
+                        showNoResults(title);
+                    })
+                    .complete(function (r) {
+                        reportMessage(constants.DEBUG, "\nComplete: " + r.responseText);
+                    });
+            }
+            catch (err)
+            {
+                reportMessage(constants.ERROR, "\nError: " + err)
+            }
+        }
+        function resultsDisappearing()
+        {
+            clearResults();
+        }
+        //
+        $("#advanced").click(function() {
+            clearResults();
+            eCMSearchState.hidemachine.setState("quicksearch", 0);
+        });
+        $("#quicksearch").click(function() {
+            clearResults();
+            resetFocus();
+            eCMSearchState.hidemachine.setState("quicksearch", 1);
+        });
+        $("#togglemessages").click(function() {
+            $("#messages").toggle();
+        });
+        function clearAll()
+        {
+            $(".advancedsearchfieldstable input[type='text']")
+                .updateFormInput("");
+            $(".advancedsearchfieldstable input[type='checkbox']")
+                .attr("value", "on")
+                .trigger("change");
+            $(".advancedsearchfieldstable select")
+                .attr("value", "-1")
+                .trigger("change");
+        }
+        $(".asclearall").click(clearAll);
+        login(eCMSearchState.mockupAuthentication, getSearchData);
+        //
+        //<!-- was advancedsearchtabs and searchsummary -->
+        $("#advancedsearchdetail")
+            .hideMyself(function () {
+                $("#advancedexpandcollapse").addClass("collapsed");
+                $(this).fadeOut(100);
+            })
+            .showMyself(function () {
+                $("#advancedexpandcollapse").removeClass("collapsed");
+                $(this).fadeIn(400);
+            });
+        $("#advancedexpandcollapse")
+            .click(function () {
+                var detail = $("#advancedsearchdetail");
+                if (!$(this).is(".collapsed"))
+                {
+                    detail.hideMyself();
+                }
+                else
+                {
+                    detail.showMyself();
+                }
+            });
+        $("#advancedsearchtabs")
+            .hide();
+        $("#advancedsearchinputwrapper")
+            .showMyself(function() {
+                $(this).show();
+                $("#advancedsearchtabs").show();
+                resizeAdvancedbuttoncontainerclipped();
+                $(this).hide();
+                $(this).fadeIn(400);
+                if (eCMSearchState.currentASFID != "")
+                {
+                    advancedforceselect(eCMSearchState.currentASFID);
+                }
+            });
+        ;
+        $(".advancedsearchfields").hide();
+        $("#favorites_controlwrapper").hide();
+        $("#messages").hide();
+        $("body").keypress(function (event) {
+            if (event.which == "13")
+            {
+                $(document.activeElement).trigger("change");
+                advancedOrQuickSearch();
+                return false;
+            }
+        });
+        $(".advancedsearchonly").hide();
+        $("#quicksearchterm")
+            .change(quickBindData)
+            .keyup(quickBindData)
+            .focus();
+        resizeAndPositionPopups();
+        $('.centerpopup').hide();
+        $("#control_searchnotes_a_div")
+            .tooltip("Click to hide", "top bottom");
+        $("#quicksearchsearchall").trigger("click");
+        $("#quicksearchbutton_div").click(function() {
+            quicktoggleselect();
+        });
+   });
+  //]]>
+  </script>
+</head>
+
+<body>
+    <!--
+  <div class="nav_bar">
+    <div class="nav_bar_item left">Nav left</div>
+    <div class="nav_bar_item right">Nav right</div>
+  </div>
+    -->
+  <div id="MainContainer">
+        <header>
+    <div id="Banner">
+        <div class="topBar">
+            <div class="fixedWidth">
+                <div class="bannerLeftSection">
+                    <ul class="startNav">
+                        <li class="ddMenu">
+                            <a class="splashButton startLink" href="/T1.C2.Web.Startup/C2P">Start</a>
+                            
+                        </li>
+                    </ul>
+                </div>
+                <div class="bannerRightSection">
+                        <div class="globalNav dropdownControl">
+                        <span class="handle" href="">Technology One
+                            <span class="ddMenuArrow"></span></span>
+                            <div  class="dropdownPanel">
+                                <a href="/T1.C2.Web.Startup/C2P/About">About</a>
+                                <a href="/T1.C2.Web.Startup/C2P/Account/LogOff">Log Off</a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="functionLevel">
+            <div class="fixedWidth">
+                <p id="FunctionLabel">
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</header>
+
+        
+        <div class="t1Console" style="display:none;">
+            <div class="logArea">
+                <div class="log"></div>
+                <div class="log"></div>
+            </div>
+        </div>
+        
+		   
+
+    <div id="contentContainer" class="inner_content">
+      <div id="twopanels">
+          <div class="searchform quicksearchinputwrapper quicksearchonly">
+            <div class="searchheading">
+              <div class="searchfieldsheadingtitle">
+                <div class="title">Quick Search</div>
+              </div>
+              <div class="searchalternatelink">
+                <a id="advanced" class="link">Advanced Search</a>
+              </div>
+              <div class="vinculum"></div>
+            </div>
+            <div id="quicksearchfields" class="quicksearchfields">
+              <input id="quicksearchterm" class="inputallfields" name="quicksearchterm" type="text" class="textfield" placeholder="Enter document keywords">
+            </div>
+            <div class="quicksearchbuttondiv">
+              <a class="retrieveButton actionButton">Search</a>
+            </div>
+            <div class="vinculum"></div>
+          </div>
+          <div id="advancedsearchinputwrapper" class="searchform advancedsearchinputwrapper advancedsearchonly">
+            <div class="searchheading">
+              <div id="advancedexpandcollapse" class="searchfieldsheadingtitle">
+                <div class="title">Advanced Search</div>
+              </div>
+              <div class="searchalternatelink">
+                <a id="quicksearch" class="link">Quick Search</a>
+              </div>
+              <div class="vinculum"></div>
+            </div>
+            <div class="vinculum"></div>
+            <div id="advancedsearchdetail" class="hideforresults">
+              <div id="advancedsearchtabs">
+                <!-- views buttons are added dynamically to advancedbuttoncontainer -->
+                <div class="searchbuttoncontainer" id="advancedbuttoncontainer">
+                  <div id="advancedbuttoncontainerclipped" class="shiftwindow">
+                    <div id="advancedbuttoncontainerlong" class="shiftstrip">
+                      <div class="shiftvinculum vinculum"></div>
+                    </div>
+                  </div>
+                  <div id="advancedbuttoncontainerlongshiftright" class="shiftbutton">
+                    <img src="resources/images/pagingNext24.png" style="height: 48px;width:24px;"></img>
+                  </div>
+                  <div id="advancedbuttoncontainerlongshiftleft" class="shiftbutton">
+                    <img src="resources/images/pagingPrev24.png" style="height: 48px;width:24px;"></img>
+                  </div>
+                </div>
+                <div id="advancedsearchfieldsproxy" class="vinculum visible"></div>
+                <!-- advancedsearchfields classes will be positioned absolutely, and will fade in and out -->
+              </div>
+              <div id="searchsummary">
+                  <div id="searchnotes_controlwrapper">
+                    <div class="summaryheading">
+                      <div class="summaryfieldsheadingtitle">
+                        <div class="title">Search Summary</div>
+                      </div>
+                      <div class="summaryclearlink">
+                        <a class="asclearall link">Clear all</a>
+                      </div>
+                      <div class="vinculum"></div>
+                    </div>
+                    <div id="searchnotes_controlwrapper_stage" 
+                         class="advancedsearchstage"></div>
+                    <div style="position: relative; display: block; padding: 5px;">
+                      <div style="display: inline-block; padding-right: 10px;">
+                        <a class="retrieveButton actionButton">Search</a>
+                      </div>
+                      <!-- "Return result as" is only visible for advanced search -->
+                      <div style="display:inline-block;">
+                        <label for="returnresultas">Return result as</label>
+                        <select id="returnresultas"></select>
+                      </div>
+                    </div>
+                  </div>
+              </div><!-- searchsummary -->
+              <div class="vinculum"></div>
+            </div><!-- advancedsearchdetail -->
+          </div><!-- advancedsearchinputwrapper -->
+          <div class="vinculum"></div>
+      </div><!-- twopanels -->
+      <div class="vinculum"></div>
+      <div id="results" class="hidefornoresults">
+        <div id="resultscontrol">
+          <div id="resultscounts" class="resultscountsdiv"></div>
+          <div id="indexcounts"></div>
+        </div>
+        <div id="resultslist"></div>
+      </div>
+      <div id="messages">
+      </div>
+    </div>
+  </div>
+  <div id="loader" style="display:none;position:absolute;width:100%;height:100%;background:url('resources/images/loaderV2.gif') no-repeat center;"></div>
+</body>
+</html>

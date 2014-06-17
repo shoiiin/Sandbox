@@ -1,0 +1,27 @@
+﻿.icon48 {
+    display: block;
+    height: 48px;
+    width: 48px;
+}
+
+.menu {
+    text-align: center;    
+}
+
+.menuItem {
+    display: inline-block;
+    cursor: pointer;
+    margin: 0 30px;
+}
+
+.menuItem.home .icon48 {
+    background-image: url('Images/Home.ico');
+}
+
+.menuItem.post .icon48 {
+    background-image: url('Images/Sound.ico');
+}
+
+.menuItem.about .icon48 {
+    background-image: url('Images/Globe.ico');
+}

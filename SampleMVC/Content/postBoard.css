@@ -1,0 +1,76 @@
+﻿.bgCol1 {
+    background-color: #D7F38F;
+}
+
+.bgCol2 {
+    background-color: #FCFCB7;
+}
+
+.bgCol3 {
+    background-color: #C7D4EB;
+}
+
+.bgCol4 {
+    background-color: #FFA0A0;
+}
+
+.postTop {
+    z-index: 1;    
+}
+
+.postBoard {
+    position: absolute;
+    bottom: 0;
+    top: 100px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+}
+
+.postBoard .postIt {
+    display: inline-block;
+    position: absolute;
+    height: 400px;
+    width: 300px;
+    border: 1px solid #d6dbdd;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+
+.postBoard .postHeader {
+    background-color: inherit;
+}
+.postBoard .postHeader .title
+{
+    font-weight: bold;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #6E7070;
+}
+
+.postBoard .postHeader .close 
+{
+    background-color: inherit;
+    position: absolute;
+    top: -10px;
+    border: 1px solid #d6dbdd;
+    right: -10px;
+    border-radius: 13px;
+}
+
+.postBoard .postHeader .close .icon24 
+{
+    background-image: url(Images/close.png);
+    height: 24px;
+    width: 24px;
+    display: block;
+}
+
+.postBoard .postContents 
+{
+    padding-top: 5px;
+    position: absolute;
+    top: 34px;
+    bottom: 0;
+    left: 10px;
+    overflow-y: auto;
+}
